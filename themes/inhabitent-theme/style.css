@@ -265,7 +265,9 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "arial", "sans-serif";
+  margin: 0; }
 
 /* Copy */
 p {
@@ -457,11 +459,12 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #404040;
+  text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #404040; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #d99054; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -469,6 +472,8 @@ a {
 
 /* Menus */
 .site-header {
+  font-family: "arial", "sans-serif";
+  text-transform: uppercase;
   height: 50px;
   width: 100%; }
   .site-header .container {
@@ -482,9 +487,8 @@ a {
     height: 33px; }
 
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left; }
+  display: -ms-flexbox;
+  display: flex; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -509,8 +513,8 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    display: inline-block;
+    margin-right: 1.2rem; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -721,14 +725,44 @@ footer {
   width: 100%;
   height: 355px;
   background: url("../../images/dark-wood.png") repeat;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  color: white;
+  line-height: 1.4; }
   footer .container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    footer .container .contact, footer .container .business {
+      width: 25%; }
     footer .container .footer-logo {
-      height: 50px; }
+      height: 50px;
+      width: 50%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
     footer .container img {
       width: auto;
       height: 100%; }
+    footer .container .site-info {
+      text-align: center;
+      width: 100%;
+      font-family: "arial", "sans-serif";
+      text-transform: uppercase;
+      margin-bottom: 0; }
+  footer h3 {
+    text-transform: uppercase;
+    color: #d99054; }
+  footer p span {
+    font-weight: bold; }
+  footer i {
+    margin: 0 .4rem; }
+    footer i:first-child {
+      margin-left: 0; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      text-decoration: underline; }
