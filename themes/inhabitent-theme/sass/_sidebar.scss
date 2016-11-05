@@ -1,0 +1,27 @@
+.widget-area {
+  width: 27%;
+  padding-top: 65px;
+  padding-left: 50px;
+  border-left: $base_solid_border;
+  h2{
+    text-transform: uppercase;
+    font-size: $base__space-unit;
+    margin-bottom: 1.4rem;
+  }
+  i {
+    margin-right: .5rem;
+  }
+  .contact, .business {
+    margin-bottom: 43px;
+    span {
+      font-weight: bold;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+}

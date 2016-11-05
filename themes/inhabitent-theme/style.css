@@ -271,16 +271,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Copy */
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  margin: 0 1.5rem; }
 
 address {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5rem; }
 
 pre {
   background: #eee;
@@ -327,7 +327,7 @@ html {
 .overlay {
   position: absolute;
   z-index: 100;
-  bottom: -5px;
+  top: 0;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -358,10 +358,10 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 1.5rem 3rem; }
 
 ul {
   list-style: disc; }
@@ -372,13 +372,16 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 1.5rem; }
+
+p {
+  margin-top: 0; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5em 1.5em; }
+  margin: 0 1.5rem 1.5rem; }
 
 img {
   height: auto;
@@ -387,7 +390,7 @@ img {
   /* Adhere to container width. */ }
 
 table {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   width: 100%; }
 
 /*--------------------------------------------------------------
@@ -472,10 +475,15 @@ a {
 
 /* Menus */
 .site-header {
+  background-color: white;
+  opacity: .5;
   font-family: "arial", "sans-serif";
   text-transform: uppercase;
   height: 50px;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid #e1e1e1; }
   .site-header .container {
     display: -ms-flexbox;
     display: flex;
@@ -498,7 +506,7 @@ a {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5em;
+      top: 1.5rem;
       left: -999em;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -533,7 +541,7 @@ a {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   overflow: hidden; }
 
 .comment-navigation .nav-previous,
@@ -585,12 +593,12 @@ a {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5em; }
+  margin-right: 1.5rem; }
 
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5em; }
+  margin-left: 1.5rem; }
 
 .aligncenter {
   clear: both;
@@ -610,7 +618,7 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -618,6 +626,27 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+.widget-area {
+  width: 27%;
+  padding-top: 65px;
+  padding-left: 50px;
+  border-left: 1px solid #e1e1e1; }
+  .widget-area h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem; }
+  .widget-area i {
+    margin-right: .5rem; }
+  .widget-area .contact, .widget-area .business {
+    margin-bottom: 43px; }
+    .widget-area .contact span, .widget-area .business span {
+      font-weight: bold; }
+  .widget-area ul {
+    margin: 0;
+    padding: 0; }
+    .widget-area ul li {
+      list-style: none; }
 
 /*--------------------------------------------------------------
 # Content
@@ -627,7 +656,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -639,11 +668,11 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+  margin: 1.5rem 0 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5rem; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -656,6 +685,15 @@ a {
 
 .bypostauthor {
   display: block; }
+
+#content {
+  padding-top: 50px;
+  display: -ms-flexbox;
+  display: flex; }
+  #content #primary {
+    width: 74%;
+    padding-top: 50px;
+    padding-right: 70px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -676,7 +714,7 @@ object {
 
 /* Captions */
 .wp-caption {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
     display: block;
@@ -690,7 +728,7 @@ object {
 
 /* Galleries*/
 .gallery {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 .gallery-item {
   display: inline-block;
@@ -721,48 +759,49 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-footer {
+.site-footer {
   width: 100%;
   height: 355px;
   background: url("../../images/dark-wood.png") repeat;
   padding-top: 4rem;
   color: white;
   line-height: 1.4; }
-  footer .container {
+  .site-footer .container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    footer .container .contact, footer .container .business {
+    .site-footer .container .contact, .site-footer .container .business {
       width: 25%; }
-    footer .container .footer-logo {
+    .site-footer .container .footer-logo {
       height: 50px;
       width: 50%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-    footer .container img {
+    .site-footer .container img {
       width: auto;
       height: 100%; }
-    footer .container .site-info {
+    .site-footer .container .site-info {
       text-align: center;
       width: 100%;
       font-family: "arial", "sans-serif";
       text-transform: uppercase;
       margin-bottom: 0; }
-  footer h3 {
+  .site-footer h3 {
     text-transform: uppercase;
-    color: #d99054; }
-  footer p span {
+    color: #d99054;
+    margin-bottom: 1.5rem; }
+  .site-footer p span {
     font-weight: bold; }
-  footer i {
+  .site-footer i {
     margin: 0 .4rem; }
-    footer i:first-child {
+    .site-footer i:first-child {
       margin-left: 0; }
-  footer a {
+  .site-footer a {
     color: white; }
-    footer a:hover {
+    .site-footer a:hover {
       text-decoration: underline; }

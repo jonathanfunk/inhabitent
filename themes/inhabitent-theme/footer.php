@@ -27,10 +27,10 @@
 						<p><span>Sunday:</span> Closed</p>
 					</div>
 					<div class="footer-logo">
-						<img src="<?php bloginfo('template_directory'); ?>/images/inhabitent-logo-text.svg" alt="Inhabitent Logo" />
+						<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-text.svg'; ?>" alt="Inhabitent Logo" />
 					</div>
 					<div class="site-info">
-						<p>Copyright &copy; 2016 Inhabitent</p>
+						<p>Copyright &copy; <?php echo date("Y"); ?> Inhabitent</p>
 					</div><!-- .site-info -->
 				</div><!--container-->
 

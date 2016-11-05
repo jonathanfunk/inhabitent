@@ -12,11 +12,12 @@ html {
 *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
 }
+
 /*TEMPORARY - DELETE WHEN DONE*/
 .overlay {
 	position: absolute;
 	z-index: 100;
-	bottom: -5px;
+	top: 0;
 	right: 0;
 	left: 0;
 	margin: 0 auto;
@@ -36,7 +37,7 @@ body {
 	height: 100%;
 }
 
-.container {
+.container {//This doesn't belong in Elements
 	width: 1120px;
 	margin: 0 auto;
 	height: 100%;
@@ -74,6 +75,10 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: $base__space-unit;
+}
+
+p {
+	margin-top: 0;
 }
 
 dt {
