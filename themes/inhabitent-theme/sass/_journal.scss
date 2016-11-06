@@ -4,6 +4,43 @@
   #primary {
     width: 74%;
     padding-top: 50px;
-    padding-right: 70px;
+    padding-right: 60px;
   }
+}
+
+article{
+  .entry-header{
+    font-family: $font_accent;
+    text-transform: uppercase;
+    line-height: 0;
+    position: relative;
+    color: white;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h1, h2 {
+    font-size: 2rem;
+    padding: .5rem 1.5rem;
+    line-height: $font__line-height-body;
+    position: absolute;
+    top: 35px;
+    width: 570px;
+    background-color: $color_green;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: $color__link-hover;
+    }
+  }
+  .entry-meta {
+    line-height: $font__line-height-body;
+    padding: .3rem .5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: $color_green;
+  }
+ }
 }
