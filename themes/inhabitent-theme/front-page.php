@@ -48,6 +48,7 @@ get_header(); ?>
 						</div>
 					</li>
 				</ul>
+				<p class="green-link"><a href="#">More Adventures</a></p>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

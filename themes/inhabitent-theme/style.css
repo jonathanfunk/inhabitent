@@ -357,7 +357,8 @@ hr {
   margin-bottom: 1.5rem; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
 
 ol {
   list-style: decimal; }
@@ -553,6 +554,7 @@ a {
 /*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
+/* Whole page */
 .home h2 {
   text-align: center;
   font-size: 2rem;
@@ -560,6 +562,14 @@ a {
   margin-bottom: 3.5rem;
   letter-spacing: 2px; }
 
+.home .green-link a {
+  border: 0;
+  background-color: #248A83;
+  font-size: 1.1rem; }
+  .home .green-link a:hover {
+    background-color: #404040; }
+
+/* Hero Area */
 .hero {
   width: 100%;
   height: 100vh;
@@ -573,10 +583,13 @@ a {
       justify-content: center; }
 
 section {
-  padding-top: 4.5rem; }
+  padding-top: 4.5rem;
+  padding-bottom: 3rem; }
 
+/* Latest Adventure */
 .adventure ul {
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 2.5rem; }
 
 .adventure li {
   width: 270px;

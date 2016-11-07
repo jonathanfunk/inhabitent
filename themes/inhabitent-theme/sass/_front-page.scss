@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
+
+/* Whole page */
+
 .home {
   h2 {
     text-align: center;
@@ -9,7 +12,18 @@
     margin-bottom: 3.5rem;
     letter-spacing: 2px;
   }
+  .green-link a {
+    border: 0;
+    background-color: $color_green;
+    font-size: 1.1rem;
+    &:hover {
+      background-color: $color__text-main;
+    }
+  }
 }
+
+/* Hero Area */
+
 .hero {
   width: 100%;
   height: 100vh;
@@ -21,10 +35,15 @@
 }
 section {
   padding-top: 4.5rem;
+  padding-bottom: 3rem;
 }
+
+/* Latest Adventure */
+
 .adventure {
   ul {
     padding: 0;
+    margin-bottom: 2.5rem;
   }
   li {
     width: 270px;
