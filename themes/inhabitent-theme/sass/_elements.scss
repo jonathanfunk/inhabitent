@@ -17,7 +17,7 @@ html {
 .overlay {
 	position: absolute;
 	z-index: 100;
-	top: 0;
+	bottom: -5px;
 	right: 0;
 	left: 0;
 	margin: 0 auto;
@@ -37,12 +37,6 @@ body {
 	height: 100%;
 }
 
-.container {//This doesn't belong in Elements
-	width: 1120px;
-	margin: 0 auto;
-	height: 100%;
-}
-
 blockquote, q {
 	quotes: "" "";
 
@@ -59,12 +53,8 @@ hr {
 	margin-bottom: $base__space-unit;
 }
 
-ul, ol {
-	margin: 0 0 $base__space-unit ($base__space-unit * 2);
-}
-
 ul {
-	list-style: disc;
+	list-style: none;
 }
 
 ol {

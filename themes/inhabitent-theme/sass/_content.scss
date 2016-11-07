@@ -62,3 +62,15 @@ body:not(.home) #content {
     padding-right: 60px;
   }
 }
+
+.container {
+	width: 1120px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.clearfix::after{
+	clear: both;
+	content: "";
+  display: table;
+}
