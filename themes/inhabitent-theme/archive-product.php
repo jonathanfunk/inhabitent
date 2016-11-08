@@ -1,42 +1,43 @@
 <?php
 /**
- * The template for displaying archive pages.
- *
- * @package RED_Starter_Theme
- */
+* The template for displaying archive pages.
+*
+* @package RED_Starter_Theme
+*/
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-      <h1>Shop Stuff</h1>
-		<?php if ( have_posts() ) : ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		<div class="container">
 
-			<header class="page-header">
-				<?php
+
+			<h1>Shop Stuff</h1>
+			<?php if ( have_posts() ) : ?>
+
+				<header class="page-header">
+					<?php
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+					?>
+				</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
+					<?php
 					get_template_part( 'template-parts/content' );
-				?>
+					?>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+				<?php the_posts_navigation(); ?>
 
-		<?php else : ?>
+			<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+			<?php endif; ?>
+		</div><!--.container-->
+	</main><!-- #main -->
+</div><!-- #primary -->
 <?php get_footer(); ?>

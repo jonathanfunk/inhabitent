@@ -50,17 +50,26 @@
 
 /* Page Styles */
 
-.blog, .archive, .single {
-  padding-top: 50px;
-  display: flex;
-	width: 1120px;
-	margin: 0 auto;
-	height: 100%;
-  #primary {
-    width: 74%;
-    padding-top: 50px;
-    padding-right: 60px;
-  }
+.blog,
+.date,
+.single-post{
+	#content {
+	  display: flex;
+		width: 1120px;
+		margin: 0 auto;
+		height: 100%;
+	  #primary {
+	    width: 74%;
+	    padding-right: 60px;
+	  }
+	}
+}
+
+body:not(.home):not(.page-template-single-about) #content{
+	padding-top: 50px;
+	#primary {
+		padding-top: 50px;
+	}
 }
 
 .container {

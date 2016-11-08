@@ -780,17 +780,24 @@ section {
   display: block; }
 
 /* Page Styles */
-.blog, .archive, .single {
-  padding-top: 50px;
+.blog #content,
+.date #content,
+.single-post #content {
   display: -ms-flexbox;
   display: flex;
   width: 1120px;
   margin: 0 auto;
   height: 100%; }
-  .blog #primary, .archive #primary, .single #primary {
+  .blog #content #primary,
+  .date #content #primary,
+  .single-post #content #primary {
     width: 74%;
-    padding-top: 50px;
     padding-right: 60px; }
+
+body:not(.home):not(.page-template-single-about) #content {
+  padding-top: 50px; }
+  body:not(.home):not(.page-template-single-about) #content #primary {
+    padding-top: 50px; }
 
 .container {
   width: 1120px;
