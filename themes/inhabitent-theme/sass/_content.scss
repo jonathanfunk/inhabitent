@@ -50,7 +50,7 @@
 
 /* Page Styles */
 
-body:not(.home) #content {
+.blog, .archive, .single {
   padding-top: 50px;
   display: flex;
 	width: 1120px;

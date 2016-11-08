@@ -780,14 +780,14 @@ section {
   display: block; }
 
 /* Page Styles */
-body:not(.home) #content {
+.blog, .archive, .single {
   padding-top: 50px;
   display: -ms-flexbox;
   display: flex;
   width: 1120px;
   margin: 0 auto;
   height: 100%; }
-  body:not(.home) #content #primary {
+  .blog #primary, .archive #primary, .single #primary {
     width: 74%;
     padding-top: 50px;
     padding-right: 60px; }
@@ -805,16 +805,16 @@ body:not(.home) #content {
 /*--------------------------------------------------------------
 # Journal
 --------------------------------------------------------------*/
-.blog .entry-header, .single .entry-header {
+.blog .entry-header, .single-post .entry-header, .date .entry-header {
   font-family: "arial", "sans-serif";
   text-transform: uppercase;
   line-height: 0;
   position: relative;
   color: white; }
-  .blog .entry-header img, .single .entry-header img {
+  .blog .entry-header img, .single-post .entry-header img, .date .entry-header img {
     width: 100%;
     height: auto; }
-  .blog .entry-header h1, .blog .entry-header h2, .single .entry-header h1, .single .entry-header h2 {
+  .blog .entry-header h1, .blog .entry-header h2, .single-post .entry-header h1, .single-post .entry-header h2, .date .entry-header h1, .date .entry-header h2 {
     font-size: 2rem;
     padding: .5rem 1.5rem;
     line-height: 1.5;
@@ -822,17 +822,21 @@ body:not(.home) #content {
     top: 35px;
     width: 570px;
     background-color: #248A83; }
-  .blog .entry-header a, .single .entry-header a {
+  .blog .entry-header a, .single-post .entry-header a, .date .entry-header a {
     color: white; }
-    .blog .entry-header a:hover, .single .entry-header a:hover {
+    .blog .entry-header a:hover, .single-post .entry-header a:hover, .date .entry-header a:hover {
       color: #d99054; }
-  .blog .entry-header .entry-meta, .single .entry-header .entry-meta {
+  .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta, .date .entry-header .entry-meta {
     line-height: 1.5;
     padding: .3rem .5rem;
     position: absolute;
     right: 0;
     bottom: 0;
     background-color: #248A83; }
+
+.about-hero {
+  height: 100vh;
+  background-size: cover; }
 
 /*--------------------------------------------------------------
 # Media
