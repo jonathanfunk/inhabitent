@@ -328,7 +328,7 @@ html {
 .overlay {
   position: absolute;
   z-index: 100;
-  bottom: -5px;
+  top: 0;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -554,7 +554,7 @@ a {
 /*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
-/* Whole page */
+/* Base */
 .home h2 {
   text-align: center;
   font-size: 2rem;
@@ -562,17 +562,32 @@ a {
   margin-bottom: 3.5rem;
   letter-spacing: 2px; }
 
-.home .green-link a {
-  border: 0;
-  background-color: #248A83;
-  font-size: 1.1rem; }
-  .home .green-link a:hover {
-    background-color: #404040; }
+.green-link {
+  margin-bottom: 0; }
+  .green-link a {
+    color: #fff;
+    font-family: "arial", "sans-serif";
+    text-transform: uppercase;
+    background-color: #248A83;
+    padding: .75rem 1.75rem; }
+    .green-link a:hover {
+      background-color: #404040; }
+
+.white-link a {
+  font: 1rem "arial", "sans-serif";
+  text-transform: uppercase;
+  border: 1px solid #e1e1e1;
+  padding: .75rem 1.75rem; }
+  .white-link a:hover {
+    background-color: #248A83;
+    border-color: #248A83;
+    color: white; }
 
 /* Hero Area */
 .hero {
   width: 100%;
   height: 100vh;
+  padding: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
   background-size: cover;
   display: -ms-flexbox;
@@ -582,9 +597,54 @@ a {
   -ms-flex-pack: center;
       justify-content: center; }
 
-section {
-  padding-top: 4.5rem;
-  padding-bottom: 3rem; }
+/* Shop Stuff */
+.product-feed {
+  padding-bottom: 0; }
+  .product-feed ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .product-feed li {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    text-align: center;
+    padding: 1rem .5rem;
+    width: 260px; }
+    .product-feed li:hover {
+      border-color: #d99054; }
+  .product-feed img {
+    width: 70px;
+    margin-bottom: 1rem; }
+  .product-feed p {
+    line-height: 1.8;
+    font-size: 1rem; }
+
+/* Inhabitent Journal */
+.journal-feed ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.journal-feed li {
+  width: 355px;
+  overflow: hidden; }
+
+.journal-feed img {
+  height: 245px;
+  width: auto;
+  display: block; }
+
+.journal-feed .post-wrap {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 1rem; }
+  .journal-feed .post-wrap h3 {
+    margin-bottom: 1rem; }
+  .journal-feed .post-wrap p {
+    font-size: .5rem;
+    margin-bottom: .3rem; }
 
 /* Latest Adventure */
 .adventure ul {
@@ -641,15 +701,11 @@ section {
   margin-bottom: 2.5rem;
   letter-spacing: 1.5px; }
 
-.adventure a {
-  color: #fff;
-  font: .8rem arial,"sans-serif";
-  text-transform: uppercase;
-  border: 1px solid white;
-  padding: .75rem 1.75rem; }
-  .adventure a:hover {
-    background-color: #248A83;
-    border-color: #248A83; }
+.adventure .white-link a {
+  color: white; }
+
+.adventure .green-link a {
+  font-size: 1.1rem; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -735,11 +791,6 @@ section {
     margin-bottom: 43px; }
     .widget-area .contact span, .widget-area .business span {
       font-weight: bold; }
-  .widget-area ul {
-    margin: 0;
-    padding: 0; }
-    .widget-area ul li {
-      list-style: none; }
 
 /*--------------------------------------------------------------
 # Content
@@ -794,15 +845,21 @@ section {
     width: 74%;
     padding-right: 60px; }
 
-body:not(.home):not(.page-template-single-about) #content {
+#content {
+  padding-bottom: 3rem; }
+
+body:not(.home):not(.page-template-page-about) #content {
   padding-top: 50px; }
-  body:not(.home):not(.page-template-single-about) #content #primary {
+  body:not(.home):not(.page-template-page-about) #content #primary {
     padding-top: 50px; }
 
 .container {
   width: 1120px;
   margin: 0 auto;
   height: 100%; }
+
+section {
+  padding-top: 4.5rem; }
 
 .clearfix::after {
   clear: both;

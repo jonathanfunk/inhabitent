@@ -93,20 +93,6 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
-function my_styles_method() {
-	wp_enqueue_style(
-		'custom-style',
-		get_template_directory_uri() . '/build/css/style.min.css'
-	);
-        $url = CFS()->get( 'about_background_image' ); //E.g. #FF0000
-        $custom_css = "
-                .about-hero{
-                        background-image: url({$url});
-                }";
-        wp_add_inline_style( 'custom-style', $custom_css );
-}
-add_action( 'wp_enqueue_scripts', 'my_styles_method' );
-
 
 /**
  * Custom template tags for this theme.

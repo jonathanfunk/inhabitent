@@ -17,11 +17,5 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 		<p><i class="fa fa-map-marker" aria-hidden="true"></i>1490 W Broadway<br> Vancouver, BC V6H 1H5</p>
 	</div>
-	<div class="business">
-		<h2>Business Hours</h2>
-		<p><span>Monday-Friday:</span> 9am to 5pm</p>
-		<p><span>Saturday:</span> 10am to 2pm</p>
-		<p><span>Sunday:</span> Closed</p>
-	</div>
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->
