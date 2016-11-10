@@ -28,19 +28,19 @@
   }
   li {
     width: 260px;
-
+    margin-bottom: 1rem;
   }
   .thumbnail-wrap{
     overflow: hidden;
+    height: 240px;
     img{
-      height: 240px;
+      height: 100%;
       width: auto;
       display: block;
     }
   }
   .product-wrap {
     border: $base_solid_border;
-
     border-top-width: 5px;
     padding: 1rem;
     display: flex;
@@ -49,17 +49,19 @@
       float: left; /* Let the before pseudo element start from the leftmost position of each list item */
       width: 0;
       white-space: nowrap;
-      content: ".....................................................";
+      content: "..................................";
       font-weight: bold;
     }
     h2 {
-      font: .8rem $font__main;
+      font: 1rem $font__main;
+      text-transform: none;
       line-height: 2;
       background-color: white;
     }
     p {
-      font: .8rem $font__main;
+      font: 1rem $font__main;
       line-height: 2;
+      margin-bottom: 0;
       background-color: white;
     }
   }
