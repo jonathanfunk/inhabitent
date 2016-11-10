@@ -13,32 +13,26 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 				<header class="page-header">
 					<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-					<ul>
-						<?php
-							$terms = get_terms('product_type');
-							foreach ($terms as $term) :
-						?>
-							<li>
-							<?php $url = get_term_link($term->slug, 'product_type'); ?>
-								<p><a href="<?php echo $url ?>"><?php echo $term->name ?></a></p>
-							</li>
-						<?php endforeach;?>
-					</ul>
+					<?php the_archive_description( '<p>', '</p>' ); ?>
 				</header><!-- .page-header -->
-				<section class="product-grid">
+				<div class="product-grid">
 					<ul>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<li>
-								<?php the_post_thumbnail(); ?>
-								<a href = "<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								<?php echo CFS()->get( 'product_price' ); ?>
+								<div class="thumbnail-wrap">
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+								</div>
+								<div class="product-wrap">
+									<h2><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+									<p><?php echo CFS()->get( 'product_price' ); ?></p>
+								</div>
 							</li>
 						<?php endwhile; ?>
 					<?php else : ?>
 						<?php get_template_part( 'template-parts/content', 'none' ); ?>
 					<?php endif; ?>
 				</ul>
-			</section>
+			</div>
 		</div><!--.container-->
 	</main><!-- #main -->
 </div><!-- #primary -->

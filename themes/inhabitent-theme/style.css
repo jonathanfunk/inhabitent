@@ -880,9 +880,10 @@ section {
   content: "";
   display: table; }
 
-.post-type-archive-product h1 {
-  text-align: center;
-  margin-bottom: 1.8rem; }
+.post-type-archive-product, .tax-product_type {
+  text-align: center; }
+  .post-type-archive-product h1, .tax-product_type h1 {
+    margin-bottom: 1.8rem; }
 
 .page-header ul {
   display: -ms-flexbox;
