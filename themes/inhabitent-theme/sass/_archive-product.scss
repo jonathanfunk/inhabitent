@@ -1,0 +1,66 @@
+.post-type-archive-product {
+  h1 {
+    text-align: center;
+    margin-bottom: 1.8rem;
+  }
+}
+
+.page-header {
+  ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    border-bottom: $base_dashed_border;
+  }
+  li {
+    margin: 0 1.7rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+  }
+}
+
+.product-grid {
+  padding-top: 1rem;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  li {
+    width: 260px;
+
+  }
+  .thumbnail-wrap{
+    overflow: hidden;
+    img{
+      height: 240px;
+      width: auto;
+      display: block;
+    }
+  }
+  .product-wrap {
+    border: $base_solid_border;
+
+    border-top-width: 5px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    h2::before {
+      float: left; /* Let the before pseudo element start from the leftmost position of each list item */
+      width: 0;
+      white-space: nowrap;
+      content: ".....................................................";
+      font-weight: bold;
+    }
+    h2 {
+      font: .8rem $font__main;
+      line-height: 2;
+      background-color: white;
+    }
+    p {
+      font: .8rem $font__main;
+      line-height: 2;
+      background-color: white;
+    }
+  }
+}

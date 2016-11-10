@@ -59,3 +59,45 @@ function my_styles_method() {
         wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+
+/**
+ * Changing the number of posts per page
+ */
+function textdomain_set_post_per_page( $query ) {
+    //Display 16 posts for a custom post type called 'movie'
+    if ( is_post_type_archive( 'product' ) && !is_admin() && $query->is_main_query() ) {
+        $query->set('posts_per_page', 16);
+				$query->set('orderby', 'title');
+				$query->set('order', 'ASC');
+    }
+		else if ( is_post_type_archive( 'product_type' ) && !is_admin() && $query->is_main_query() ) {
+        $query->set('posts_per_page', 4);
+				$query->set('orderby', 'title');
+				$query->set('order', 'ASC');
+    }
+}
+add_action( 'pre_get_posts', 'textdomain_set_post_per_page', 1 );
+
+function product_type_archive_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+    } elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+
+    return $title;
+}
+
+add_filter( 'get_the_archive_title', 'product_type_archive_title' );
+
+function inhabitent_product_archive_title( $title ){
+	if(is_post_type_archive( 'product' )){
+		$title = 'Shop Stuff!';
+	}
+	return $title;
+}
+add_filter('get_the_archive_title','inhabitent_product_archive_title');
