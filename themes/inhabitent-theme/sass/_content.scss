@@ -119,3 +119,11 @@ section:not(.hero):not(.about-hero) {
     }
   }
 }
+
+.social-wrap {
+	display: flex;
+	p {
+		margin-right: .3rem;
+		font-size: .8rem;
+	}
+}

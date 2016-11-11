@@ -79,6 +79,10 @@ function textdomain_set_post_per_page( $query ) {
 }
 add_action( 'pre_get_posts', 'textdomain_set_post_per_page', 1 );
 
+
+/**
+ * Changes title to just title. Nothing like Category:.
+ */
 function product_type_archive_title( $title ) {
     if ( is_category() ) {
         $title = single_cat_title( '', false );
@@ -95,9 +99,12 @@ function product_type_archive_title( $title ) {
 
 add_filter( 'get_the_archive_title', 'product_type_archive_title' );
 
+/**
+ * Changes archive title 'product'.
+ */
 function inhabitent_product_archive_title( $title ){
 	if(is_post_type_archive( 'product' )){
-		$title = 'Shop Stuff!';
+		$title = 'Shop Stuff';
 	}
 	return $title;
 }

@@ -894,6 +894,13 @@ section:not(.hero):not(.about-hero) {
     border-color: #248A83;
     color: white; }
 
+.social-wrap {
+  display: -ms-flexbox;
+  display: flex; }
+  .social-wrap p {
+    margin-right: .3rem;
+    font-size: .8rem; }
+
 .post-type-archive-product, .tax-product_type {
   text-align: center; }
   .post-type-archive-product h1, .tax-product_type h1 {
@@ -957,6 +964,27 @@ section:not(.hero):not(.about-hero) {
       line-height: 2;
       margin-bottom: 0;
       background-color: white; }
+
+.single-product .one-product {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.single-product .product-img {
+  width: 540px; }
+
+.single-product .product-desc {
+  width: 540px; }
+  .single-product .product-desc h1 {
+    color: #d99054;
+    margin-bottom: .7rem; }
+  .single-product .product-desc h2 {
+    font-size: 1.8rem;
+    letter-spacing: .5px;
+    font-weight: normal; }
+  .single-product .product-desc p {
+    line-height: 1.8; }
 
 /*--------------------------------------------------------------
 # Journal
