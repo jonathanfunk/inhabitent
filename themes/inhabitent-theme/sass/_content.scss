@@ -50,9 +50,7 @@
 
 /* Page Styles */
 
-.blog,
-.date,
-.single-post{
+body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product){
 	#content {
 	  display: flex;
 		width: 1120px;
@@ -82,7 +80,7 @@ body:not(.home):not(.page-template-page-about) #content{
 	height: 100%;
 }
 
-body:not(.page-template-page-about)section {
+section:not(.hero):not(.about-hero) {
   padding-top: 4.5rem;
 }
 

@@ -602,7 +602,7 @@ a {
 .hero {
   width: 100%;
   height: 100vh;
-  padding: 0;
+  padding-top: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
   background-size: cover;
   display: -ms-flexbox;
@@ -846,17 +846,13 @@ a {
   display: block; }
 
 /* Page Styles */
-.blog #content,
-.date #content,
-.single-post #content {
+body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product) #content {
   display: -ms-flexbox;
   display: flex;
   width: 1120px;
   margin: 0 auto;
   height: 100%; }
-  .blog #content #primary,
-  .date #content #primary,
-  .single-post #content #primary {
+  body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product) #content #primary {
     width: 74%;
     padding-right: 60px; }
 
@@ -873,7 +869,7 @@ body:not(.home):not(.page-template-page-about) #content {
   margin: 0 auto;
   height: 100%; }
 
-body:not(.page-template-page-about)section {
+section:not(.hero):not(.about-hero) {
   padding-top: 4.5rem; }
 
 .clearfix::after {
