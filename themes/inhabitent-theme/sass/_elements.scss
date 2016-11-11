@@ -64,8 +64,9 @@ ol {
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
-	margin-left: $base__space-unit;
+	border-top: $base_solid_border;
+	padding: 1.5rem 0;
+	margin-left: 4rem;
 }
 
 p {

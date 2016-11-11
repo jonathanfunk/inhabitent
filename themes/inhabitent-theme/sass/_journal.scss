@@ -1,11 +1,13 @@
 /*--------------------------------------------------------------
 # Journal
 --------------------------------------------------------------*/
-
-.blog, .single-post, .date {
-  article{
+.blog, .date {
+    article{
     margin-bottom: 4.5rem;
   }
+}
+
+.blog, .single-post, .date {
   .entry-header{
     font-family: $font_accent;
     text-transform: uppercase;
