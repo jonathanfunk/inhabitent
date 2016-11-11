@@ -54,7 +54,8 @@ function my_styles_method() {
         $url = CFS()->get( 'about_background_image' );//This is grabbing the background image vis Custom Field Suite Plugin
         $custom_css = "
                 .about-hero{
-                        background-image: url({$url});
+                        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({$url}) no-repeat bottom center;
+												background-size: cover;
                 }";
         wp_add_inline_style( 'red-starter-style', $custom_css );
 }

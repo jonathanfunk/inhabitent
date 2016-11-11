@@ -1012,7 +1012,6 @@ section:not(.hero):not(.about-hero) {
 
 .about-hero {
   height: 100vh;
-  background-size: cover;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
