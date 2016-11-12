@@ -43,16 +43,16 @@
  }
  .entry-content {
    line-height: 1.8;
-   .read-more{
-     font: 1rem $font_accent;
-     text-transform: uppercase;
-     border: $base_solid_border;
-     padding: .75rem 1.75rem;
-     &:hover {
-       background-color: $color_green;
-       border-color: $color_green;
-       color: white;
-     }
-   }
  }
+}
+.read-more{
+  font: 1rem $font_accent;
+  text-transform: uppercase;
+  border: $base_solid_border;
+  padding: .75rem 1.75rem;
+  &:hover {
+    background-color: $color_green;
+    border-color: $color_green;
+    color: white;
+  }
 }

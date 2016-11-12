@@ -1,0 +1,33 @@
+.search-results {
+  h1 {
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: $base_solid_border;
+  }
+  h2 {
+    a{
+      color: $color_green;
+    }
+  }
+  .entry-summary {
+    p{
+      margin-bottom: 2rem;
+    }
+  }
+  article {
+    margin-bottom: 5rem;
+  }
+  .page-numbers{
+    color: #fff;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    background-color: $color_green;
+    padding: .4rem .8rem;
+    &:hover {
+      background-color: $color__text-main;
+    }
+    .current {
+      background-color: $color__text-main;
+    }
+  }
+}
