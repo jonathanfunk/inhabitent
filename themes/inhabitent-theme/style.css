@@ -902,9 +902,9 @@ section:not(.hero):not(.about-hero) {
     margin-right: .3rem;
     font-size: .8rem; }
 
-.post-type-archive-product, .tax-product_type {
+.post-type-archive-product .page-header, .tax-product_type .page-header {
   text-align: center; }
-  .post-type-archive-product h1, .tax-product_type h1 {
+  .post-type-archive-product .page-header h1, .tax-product_type .page-header h1 {
     margin-bottom: 1.8rem; }
 
 .page-header ul {
@@ -1006,9 +1006,8 @@ section:not(.hero):not(.about-hero) {
 .single-post .comment {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 1rem; }
-
-.single-post .children .comment {
-  border: 0; }
+  .single-post .comment .children .comment {
+    border: 0; }
 
 .single-post .comment-body {
   display: -ms-flexbox;
@@ -1022,6 +1021,28 @@ section:not(.hero):not(.about-hero) {
 .single-post .comment-content {
   width: 100%;
   padding-bottom: 1.5rem; }
+  .single-post .comment-content .comment-meta {
+    margin-bottom: 1rem; }
+
+.single-post #respond h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.75rem; }
+
+.single-post #respond label {
+  display: block; }
+
+.single-post #respond .comment-form-author {
+  display: inline-block;
+  width: 49%; }
+
+.single-post #respond .comment-form-email {
+  display: inline-block;
+  width: 49%;
+  margin-left: 10px; }
+
+.single-post #respond input[id=url], .single-post #respond input[id=email], .single-post #respond input[id='author'] {
+  width: 100%;
+  margin-top: 1rem; }
 
 /*--------------------------------------------------------------
 # Journal
