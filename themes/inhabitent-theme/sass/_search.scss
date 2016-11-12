@@ -17,16 +17,21 @@
   article {
     margin-bottom: 5rem;
   }
+  .search-pagination{
+    border-top: $base_solid_border;
+    padding-top: 2rem;
+    .current {
+      background-color: $color__text-main;
+    }
+  }
   .page-numbers{
     color: #fff;
     font-family: $font_accent;
     text-transform: uppercase;
     background-color: $color_green;
     padding: .4rem .8rem;
+    cursor: pointer;
     &:hover {
-      background-color: $color__text-main;
-    }
-    .current {
       background-color: $color__text-main;
     }
   }

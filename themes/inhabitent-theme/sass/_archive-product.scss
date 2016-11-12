@@ -35,11 +35,11 @@
   .thumbnail-wrap{
     overflow: hidden;
     height: 240px;
-    img{
-      height: 100%;
-      width: auto;
-      display: block;
-    }
+  }
+  img{
+    height: 100%;
+    width: auto;
+    display: block;
   }
   .product-wrap {
     border: $base_solid_border;

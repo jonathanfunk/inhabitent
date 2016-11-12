@@ -110,34 +110,34 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+	.search-form {
+		fieldset {
+			border: 0;
+			padding: 0;
+			margin: 0;
+			.show-search {
+				border: 0;
+				padding: 0;
+				margin: 0;
+				display: inline-block;
+				cursor: pointer;
+				font-size: 1rem;
+				margin-right: 1.2rem;
+			}
+			input[type=search]{
+				font: 1rem $font_accent;
+				text-transform: uppercase;
+				border: 0;
+				padding: 0;
+				margin: 0;
+				width: 0;
+			}
+		}
+	}
 }
 
 /* Search Form */
 
-.search-form {
-	fieldset {
-		border: 0;
-		padding: 0;
-		margin: 0;
-		.show-search {
-			border: 0;
-			padding: 0;
-			margin: 0;
-			display: inline-block;
-			cursor: pointer;
-			font-size: 1rem;
-			margin-right: 1.2rem;
-		}
-		input[type=search]{
-			font: 1rem $font_accent;
-			text-transform: uppercase;
-			border: 0;
-			padding: 0;
-			margin: 0;
-			width: 0;
-		}
-	}
-}
 
 /* Small menu. */
 .menu-toggle,
