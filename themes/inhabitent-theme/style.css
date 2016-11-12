@@ -689,7 +689,7 @@ a {
   right: 0; }
 
 .adventure img {
-  max-width: none;
+  width: auto;
   max-height: 400px;
   position: absolute;
   top: 75%;

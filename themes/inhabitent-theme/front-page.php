@@ -53,40 +53,25 @@ get_header(); ?>
 			<section class="adventure container">
 				<h2>Latest Adventures</h2><!--May need to change this to dynamic?-->
 				<ul class="clearfix">
+					<?php
+						$args = array(
+							'post_type' => 'adventure',
+							'order' => 'DESC',
+						 	'posts_per_page' => 4,);
+						$adventure_posts = get_posts( $args ); // returns an array of posts
+					?>
+					<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
 					<li>
-						<div class="adventure-img"><img src="<?php echo get_template_directory_uri() . '/images/canoe-girl.jpg'; ?>" alt="Canoe Girl" />
+						<div class="adventure-img"><?php the_post_thumbnail(); ?>
 						</div>
 						<div class="headline">
-							<h3>Getting Back to Nature in a Canoe</h3>
-							<p class="white-link"><a href="#">Read More</a></p>
+							<h3><?php the_title(); ?></h3>
+							<p class="white-link"><a href="<?php the_permalink(); ?>">Read More</a></p>
 						</div>
 					</li>
-					<li>
-						<div class="adventure-img"><img src="<?php echo get_template_directory_uri() . '/images/beach-bonfire.jpg'; ?>" alt="Beach Bonfire" />
-						</div>
-						<div class="headline">
-							<h3>A Night with Friends at the beach</h3>
-							<p class="white-link"><a href="#">Read More</a></p>
-						</div>
-					</li>
-					<li>
-						<div class="adventure-img"><img src="<?php echo get_template_directory_uri() . '/images/mountain-hikers.jpg'; ?>" alt="Mountain Hikers" />
-						</div>
-						<div class="headline">
-							<h3>Taking in the View at Big Mountain</h3>
-							<p class="white-link"><a href="#">Read More</a></p>
-						</div>
-					</li>
-					<li>
-						<div class="adventure-img"><img src="<?php echo get_template_directory_uri() . '/images/night-sky.jpg'; ?>" alt="Night Sky" />
-						</div>
-						<div class="headline">
-							<h3>Star-Gazing at the Night Sky</h3>
-							<p class="white-link"><a href="#">Read More</a></p>
-						</div>
-					</li>
+					<?php endforeach; ?>
 				</ul>
-				<p class="green-link"><a href="#">More Adventures</a></p>
+				<p class="green-link"><a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">More Adventures</a></p>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
