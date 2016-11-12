@@ -785,6 +785,10 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+/* Business Hours Widget */
+.day-of-week {
+  font-weight: bold; }
+
 .widget-area {
   width: 27%;
   padding-top: 65px;
@@ -944,24 +948,24 @@ section:not(.hero):not(.about-hero) {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    .product-grid .product-wrap h2::before {
-      float: left;
-      /* Let the before pseudo element start from the leftmost position of each list item */
-      width: 0;
-      white-space: nowrap;
-      content: "..................................";
-      font-weight: bold; }
     .product-grid .product-wrap h2 {
       font: 1rem "merriweather", serif;
       text-transform: none;
       line-height: 2;
       letter-spacing: 0;
-      background-color: white; }
+      float: left;
+      width: 170px;
+      overflow: hidden;
+      white-space: nowrap; }
+      .product-grid .product-wrap h2 span:after {
+        content: ".................................."; }
     .product-grid .product-wrap p {
       font: 1rem "merriweather", serif;
       line-height: 2;
       margin-bottom: 0;
-      background-color: white; }
+      float: left;
+      width: 80px;
+      overflow: hidden; }
 
 .single-product .one-product {
   display: -ms-flexbox;
@@ -971,6 +975,9 @@ section:not(.hero):not(.about-hero) {
 
 .single-product .product-img {
   width: 540px; }
+  .single-product .product-img img {
+    width: 100%;
+    height: auto; }
 
 .single-product .product-desc {
   width: 540px; }

@@ -5,6 +5,10 @@
   }
   .product-img {
     width: 540px;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   .product-desc {
     width: 540px;

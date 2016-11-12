@@ -47,25 +47,26 @@
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    h2::before {
-      float: left; /* Let the before pseudo element start from the leftmost position of each list item */
-      width: 0;
-      white-space: nowrap;
-      content: "..................................";
-      font-weight: bold;
-    }
     h2 {
       font: 1rem $font__main;
       text-transform: none;
       line-height: 2;
       letter-spacing: 0;
-      background-color: white;
+      float: left;
+      width: 170px;
+      overflow: hidden;
+      white-space: nowrap;
+      span:after {
+        content: "..................................";
+      }
     }
     p {
       font: 1rem $font__main;
       line-height: 2;
       margin-bottom: 0;
-      background-color: white;
+      float:left;
+      width: 80px;
+      overflow: hidden;
     }
   }
 }
