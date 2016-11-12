@@ -1,18 +1,7 @@
-.post-type-archive-product, .tax-product_type {
-  .page-header{
-    text-align: center;
-    h1 {
-      margin-bottom: 1.8rem;
-    }
-  }
-}
-
 .page-header {
   ul {
     display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
-    border-bottom: $base_dashed_border;
   }
   li {
     margin: 0 1.7rem;

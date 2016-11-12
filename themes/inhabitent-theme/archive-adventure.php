@@ -14,15 +14,15 @@ get_header(); ?>
 				<header class="page-header">
 					<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 				</header><!-- .page-header -->
-				<div class="product-grid">
+				<div class="adventure-grid">
 					<ul>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<li>
-								<div class="thumbnail-wrap">
-									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+								<div class="adventure-img"><?php the_post_thumbnail(); ?>
 								</div>
-								<div class="product-wrap">
-									<h2><span><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></span></a></h2>
+								<div class="headline">
+									<h3><?php the_title(); ?></h3>
+									<p class="white-link"><a href="<?php the_permalink(); ?>">Read More</a></p>
 								</div>
 							</li>
 						<?php endwhile; ?>

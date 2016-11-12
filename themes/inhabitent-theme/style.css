@@ -706,8 +706,7 @@ a {
 .adventure h3 {
   font: 1.5rem "merriweather", serif;
   text-transform: none;
-  margin-bottom: 2.5rem;
-  letter-spacing: 1.5px; }
+  margin-bottom: 2.5rem; }
 
 .adventure .white-link a {
   color: white; }
@@ -845,13 +844,13 @@ a {
   display: block; }
 
 /* Page Styles */
-body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product) #content {
+body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure) #content {
   display: -ms-flexbox;
   display: flex;
   width: 1120px;
   margin: 0 auto;
   height: 100%; }
-  body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product) #content #primary {
+  body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure) #content #primary {
     width: 74%;
     padding-right: 60px; }
 
@@ -875,6 +874,16 @@ section:not(.hero):not(.about-hero) {
   clear: both;
   content: "";
   display: table; }
+
+/* Custom Archives Styles*/
+.post-type-archive-adventure .page-header, .post-type-archive-product .page-header, .tax-product_type .page-header {
+  text-align: center; }
+  .post-type-archive-adventure .page-header h1, .post-type-archive-product .page-header h1, .tax-product_type .page-header h1 {
+    margin-bottom: 1.8rem; }
+
+.post-type-archive-adventure .page-header, .post-type-archive-product .page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem; }
 
 /* Customized Links */
 .green-link {
@@ -905,18 +914,11 @@ section:not(.hero):not(.about-hero) {
     margin-right: .3rem;
     font-size: .8rem; }
 
-.post-type-archive-product .page-header, .tax-product_type .page-header {
-  text-align: center; }
-  .post-type-archive-product .page-header h1, .tax-product_type .page-header h1 {
-    margin-bottom: 1.8rem; }
-
 .page-header ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
-  padding-bottom: 2rem;
-  border-bottom: 1px dashed #c8c8c8; }
+      justify-content: center; }
 
 .page-header li {
   margin: 0 1.7rem;
@@ -993,6 +995,55 @@ section:not(.hero):not(.about-hero) {
   .single-product .product-desc p {
     line-height: 1.8; }
 
+.post-type-archive-adventure h1 {
+  text-align: center; }
+
+.adventure-grid ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 1rem; }
+
+.adventure-grid li {
+  width: 550px;
+  height: 550px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .adventure-grid li .adventure-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .adventure-grid li img {
+    width: auto;
+    max-height: 630px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -90%); }
+  .adventure-grid li .headline {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 4rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .adventure-grid li h3 {
+    font: 3rem "merriweather", serif;
+    text-transform: none;
+    margin-bottom: 4.5rem; }
+  .adventure-grid li .white-link a {
+    color: white; }
+  .adventure-grid li .green-link a {
+    font-size: 1.1rem; }
+
+/*Hello!*/
 .single-post .entry-footer {
   font-family: "novacento", "arial", "sans-serif";
   text-transform: uppercase;

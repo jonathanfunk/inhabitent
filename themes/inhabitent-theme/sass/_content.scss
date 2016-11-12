@@ -50,7 +50,7 @@
 
 /* Page Styles */
 
-body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product){
+body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure){
 	#content {
 	  display: flex;
 		width: 1120px;
@@ -88,6 +88,23 @@ section:not(.hero):not(.about-hero) {
 	clear: both;
 	content: "";
   display: table;
+}
+
+/* Custom Archives Styles*/
+.post-type-archive-adventure, .post-type-archive-product, .tax-product_type {
+  .page-header{
+    text-align: center;
+    h1 {
+      margin-bottom: 1.8rem;
+    }
+  }
+}
+
+.post-type-archive-adventure, .post-type-archive-product{
+	.page-header{
+		border-bottom: $base_dashed_border;
+		margin-bottom: 3rem;
+	}
 }
 
 /* Customized Links */
