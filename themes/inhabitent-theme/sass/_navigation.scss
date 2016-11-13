@@ -5,12 +5,9 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: $color_green;
 	text-decoration: none;
 
-	&:visited {
-		color: $color__link-visited;
-	}
 	&:hover,
 	&:focus,
 	&:active {
@@ -28,8 +25,7 @@ a {
 /* Menus */
 
 .site-header {
-	background-color: white;
-	opacity: .5;
+	background-color: rgba(255,255,255,0.6);
 	font-family: $font_accent;
 	text-transform: uppercase;
 	height: 50px;
@@ -57,8 +53,8 @@ a {
 
 .reverse-nav {
 	background-color: transparent;
+	position: absolute;
 	border: 0;
-	opacity: 1;
 	a {
 		color: white;
 		&:hover{

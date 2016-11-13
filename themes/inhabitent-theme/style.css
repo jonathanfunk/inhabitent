@@ -466,10 +466,8 @@ label {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #404040;
+  color: #248A83;
   text-decoration: none; }
-  a:visited {
-    color: #404040; }
   a:hover, a:focus, a:active {
     color: #d99054; }
   a:focus {
@@ -479,8 +477,7 @@ a {
 
 /* Menus */
 .site-header {
-  background-color: white;
-  opacity: .5;
+  background-color: rgba(255, 255, 255, 0.6);
   font-family: "novacento", "arial", "sans-serif";
   text-transform: uppercase;
   height: 50px;
@@ -507,8 +504,8 @@ a {
 
 .reverse-nav {
   background-color: transparent;
-  border: 0;
-  opacity: 1; }
+  position: absolute;
+  border: 0; }
   .reverse-nav a {
     color: white; }
     .reverse-nav a:hover {

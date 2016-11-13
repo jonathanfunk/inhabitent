@@ -1,9 +1,12 @@
 (function( $ ) {
+
+  //This will show/hide search form in navigation
   $('.show-search').on('click', function(event){
     event.preventDefault();
     $('input[type=search]').animate({width: 'toggle'}).focus();
   });
 
+  //These are variables for Bodies with certain classes
   var homeClass = $("body").hasClass("home");
   var adventureClass = $("body").hasClass("single-adventure");
   var aboutClass = $("body").hasClass("page-template-page-about");
@@ -21,8 +24,4 @@
       }
     });
   }
-
-
-
-
 })( jQuery );
