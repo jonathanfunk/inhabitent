@@ -637,6 +637,9 @@ a {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
+  .hero h2 {
+    font-size: 0;
+    margin: 0; }
 
 /* Shop Stuff */
 .product-feed {
@@ -936,8 +939,9 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
 
 .white-link a {
   font: 1rem "novacento", "arial", "sans-serif";
+  color: black;
   text-transform: uppercase;
-  border: 1px solid #e1e1e1;
+  border: 1px solid black;
   padding: .75rem 1.75rem; }
   .white-link a:hover {
     background-color: #248A83;
@@ -984,31 +988,32 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
     height: 100%;
     width: auto;
     display: block; }
-  .product-grid .product-wrap {
-    border: 1px solid #e1e1e1;
-    border-top-width: 5px;
-    padding: 1rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .product-grid .product-wrap h2 {
-      font: 1.5rem "merriweather", serif;
-      text-transform: none;
-      line-height: 2;
-      letter-spacing: 0;
-      float: left;
-      width: 170px;
-      overflow: hidden;
-      white-space: nowrap; }
-      .product-grid .product-wrap h2 span:after {
-        content: ".................................."; }
-    .product-grid .product-wrap p {
-      font-family: "merriweather", serif;
-      margin-bottom: 0;
-      float: left;
-      width: 80px;
-      overflow: hidden; }
+
+.product-wrap {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .product-wrap h2 {
+    font: 1rem "merriweather", serif;
+    text-transform: none;
+    line-height: 2;
+    letter-spacing: 0;
+    float: left;
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap; }
+    .product-wrap h2 span:after {
+      content: ".................................."; }
+  .product-wrap p {
+    font-family: "merriweather", serif;
+    margin-bottom: 0;
+    float: left;
+    width: 80px;
+    overflow: hidden; }
 
 /*--------------------------------------------------------------
 # Single Product Page
@@ -1136,6 +1141,12 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
   margin-right: 1.5rem; }
   .single-post .comment-author-avatar img {
     border-radius: 50%; }
+
+.single-post .comment-author {
+  font-weight: bold; }
+
+.single-post .comment-metadata {
+  color: #808080; }
 
 .single-post .comment-content {
   width: 100%;

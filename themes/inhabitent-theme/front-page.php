@@ -8,8 +8,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
       <section class="hero">
+				<h2>Inhabitent Camping Supply Company</h2>
 				<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg'; ?>" alt="Inhabitent Logo" />
       </section>
 			<section class="product-feed container">
@@ -21,7 +22,7 @@ get_header(); ?>
 					?>
 						<li>
 						<?php $url = get_term_link($term->slug, 'product_type'); ?>
-							<img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug ?>.svg";/>
+							<img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug ?>.svg" alt="Product Icon"/>
 							<p><?php echo $term->description ?></p>
 		    			<p class="green-link"><a href="<?php echo $url ?>"><?php echo $term->name ?> Stuff</a></p>
 						</li>

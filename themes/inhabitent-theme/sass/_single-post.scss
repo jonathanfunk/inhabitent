@@ -32,11 +32,17 @@
   .comment-body {
     display: flex;
   }
-  .comment-author-avatar{
+  .comment-author-avatar {
     margin-right: 1.5rem;
     img {
       border-radius: 50%;
     }
+  }
+  .comment-author {
+    font-weight: bold;
+  }
+  .comment-metadata {
+    color: $color_med_grey;
   }
   .comment-content {
     width: 100%;
@@ -53,11 +59,11 @@
     label {
       display: block;
     }
-    .comment-form-author{
+    .comment-form-author {
       display: inline-block;
       width: 49%;
     }
-    .comment-form-email{
+    .comment-form-email {
       display: inline-block;
       width: 49%;
       margin-left: 10px;

@@ -33,7 +33,7 @@ get_header(); ?>
 									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
 								</div>
 								<div class="product-wrap">
-									<h2><span><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></span></a></h2>
+									<h2><span><?php the_title(); ?></span></h2>
 									<p><?php echo CFS()->get( 'product_price' ); ?></p>
 								</div>
 							</li>
