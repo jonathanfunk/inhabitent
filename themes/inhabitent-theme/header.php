@@ -26,7 +26,7 @@
 				<div class="container">
 					<div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg'; ?>" alt="Inhabitent Logo" />
+							<!--<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg'; ?>" alt="Inhabitent Logo" />-->
 					  </a>
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					</div><!-- .site-branding -->

@@ -42,8 +42,23 @@ a {
 		justify-content: space-between;
 		align-items: center;
 	}
-	img {
+	.site-branding {
 		height: 33px;
+		width: 50px;
+		background-image: url('../../images/inhabitent-logo-tent.svg');
+		background-size: cover;
+	}
+}
+
+.reverse-nav {
+	background-color: transparent;
+	border: 0;
+	opacity: 1;
+	a {
+		color: white;
+	}
+	.site-branding {
+		background-image: url('../../images/inhabitent-logo-tent-white.svg');
 	}
 }
 
