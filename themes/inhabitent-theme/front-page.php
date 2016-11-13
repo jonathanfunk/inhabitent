@@ -40,7 +40,7 @@ get_header(); ?>
 					?>
 					<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 						<li>
-							<?php the_post_thumbnail(); ?>
+							<?php the_post_thumbnail('medium'); ?>
 							<div class="post-wrap">
 								<p><?php the_date(); ?> / <?php comments_number(); ?></p>
 								<h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
@@ -62,7 +62,7 @@ get_header(); ?>
 					?>
 					<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
 					<li>
-						<div class="adventure-img"><?php the_post_thumbnail(); ?>
+						<div class="adventure-img"><?php the_post_thumbnail('large'); ?>
 						</div>
 						<div class="headline">
 							<h3><?php the_title(); ?></h3>

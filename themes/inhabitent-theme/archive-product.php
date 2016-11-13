@@ -30,7 +30,7 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<li>
 								<div class="thumbnail-wrap">
-									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
 								</div>
 								<div class="product-wrap">
 									<h2><span><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></span></a></h2>

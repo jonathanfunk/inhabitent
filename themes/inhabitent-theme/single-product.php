@@ -12,7 +12,7 @@ get_header(); ?>
 			<article class="one-product container">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="product-img">
-						<?php the_post_thumbnail( 'category-thumb' ); ?>
+						<?php the_post_thumbnail( 'large' ); ?>
 					</div>
 					<div class="product-desc">
 						<h1><?php the_title(); ?></h1>
