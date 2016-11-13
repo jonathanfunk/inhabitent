@@ -255,14 +255,14 @@ th {
   font-family: 'merriweather';
   src: url("../fonts/merriweather-light-webfont.eot");
   src: url("../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
-  font-weight: lighter;
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'merriweather';
   src: url("../fonts/merriweather-lightitalic-webfont.eot");
   src: url("../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
-  font-weight: lighter;
+  font-weight: normal;
   font-style: italic; }
 
 @font-face {
@@ -299,6 +299,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   letter-spacing: .15rem;
   font-family: "novacento", "arial", "sans-serif";
+  color: black;
   margin: 0;
   text-transform: uppercase; }
 
@@ -1213,7 +1214,8 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
 .read-more {
   font: 1rem "novacento", "arial", "sans-serif";
   text-transform: uppercase;
-  border: 1px solid #e1e1e1;
+  color: black;
+  border: 1px solid black;
   padding: .75rem 1.75rem; }
   .read-more:hover {
     background-color: #248A83;

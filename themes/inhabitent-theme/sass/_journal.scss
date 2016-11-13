@@ -46,7 +46,8 @@
 .read-more{
   font: 1rem $font_accent;
   text-transform: uppercase;
-  border: $base_solid_border;
+  color: black;
+  border: 1px solid black;
   padding: .75rem 1.75rem;
   &:hover {
     background-color: $color_green;
