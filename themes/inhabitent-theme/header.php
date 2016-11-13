@@ -16,9 +16,6 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<!--<div class="overlay">
-			<img src="<?php bloginfo('template_directory'); ?>/images/TEMP.png" alt="Inhabitent Logo" />
-		</div>-->
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 

@@ -361,21 +361,6 @@ html {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
 
-/*TEMPORARY - DELETE WHEN DONE*/
-.overlay {
-  position: absolute;
-  z-index: 100;
-  bottom: -5px;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  width: 1276px;
-  opacity: .2;
-  overflow: hidden; }
-  .overlay img {
-    width: 100%;
-    height: auto; }
-
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
@@ -740,6 +725,7 @@ a {
 
 .adventure h3 {
   font: 1.5rem "merriweather", serif;
+  color: white;
   text-transform: none;
   margin-bottom: 2.5rem; }
 
@@ -1084,8 +1070,9 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
     width: 100%;
     padding: 4rem 1.5rem;
     background-color: rgba(0, 0, 0, 0.4); }
-  .adventure-grid li h3 {
+  .adventure-grid li h2 {
     font: 3rem "merriweather", serif;
+    color: white;
     text-transform: none;
     margin-bottom: 4.5rem; }
   .adventure-grid li .white-link a {
