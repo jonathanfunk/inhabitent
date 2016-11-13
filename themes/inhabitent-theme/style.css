@@ -500,6 +500,10 @@ a {
     width: 50px;
     background-image: url("../../images/inhabitent-logo-tent.svg");
     background-size: cover; }
+    .site-header .site-branding a {
+      display: block;
+      height: 33px;
+      width: 50px; }
 
 .reverse-nav {
   background-color: transparent;
@@ -507,6 +511,8 @@ a {
   opacity: 1; }
   .reverse-nav a {
     color: white; }
+    .reverse-nav a:hover {
+      color: #d99054; }
   .reverse-nav .site-branding {
     background-image: url("../../images/inhabitent-logo-tent-white.svg"); }
 
