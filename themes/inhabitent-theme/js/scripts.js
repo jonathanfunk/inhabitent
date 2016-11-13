@@ -1,5 +1,6 @@
 (function( $ ) {
   $('.show-search').on('click', function(event){
-    $('input[type=search]').toggle().css('width', '200');
+    event.preventDefault();
+    $('input[type=search]').animate({width: 'toggle'}).focus();
   });
 })( jQuery );

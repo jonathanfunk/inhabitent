@@ -540,15 +540,15 @@ a {
       margin: 0;
       display: inline-block;
       cursor: pointer;
-      font-size: 1rem;
-      margin-right: 1.2rem; }
+      font-size: 1rem; }
     .main-navigation .search-form fieldset input[type=search] {
       font: 1rem "novacento", "arial", "sans-serif";
       text-transform: uppercase;
       border: 0;
       padding: 0;
       margin: 0;
-      width: 0; }
+      width: 200px;
+      display: none; }
 
 /* Search Form */
 /* Small menu. */
@@ -1046,17 +1046,17 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
   .adventure-grid li .green-link a {
     font-size: 1.1rem; }
 
-.adventure-img {
+.single-adventure .adventure-img {
   width: 100%; }
-  .adventure-img img {
+  .single-adventure .adventure-img img {
     max-width: 100%;
     height: auto; }
 
-.adventure-desc {
+.single-adventure .adventure-desc {
   padding-top: 2.5rem;
   margin: 0 auto;
   width: 800px; }
-  .adventure-desc h2 {
+  .single-adventure .adventure-desc h2 {
     font-weight: normal;
     font-size: 1.2rem; }
 
