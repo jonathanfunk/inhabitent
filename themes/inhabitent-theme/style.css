@@ -743,7 +743,8 @@ a {
   margin-bottom: 2.5rem; }
 
 .adventure .white-link a {
-  color: white; }
+  color: white;
+  border: 1px solid white; }
 
 .adventure .green-link a {
   font-size: 1.1rem; }
@@ -1087,7 +1088,8 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
     text-transform: none;
     margin-bottom: 4.5rem; }
   .adventure-grid li .white-link a {
-    color: white; }
+    color: white;
+    border: 1px solid white; }
   .adventure-grid li .green-link a {
     font-size: 1.1rem; }
 

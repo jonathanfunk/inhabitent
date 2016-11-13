@@ -8,12 +8,12 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main">
 		<div class="container">
 			<?php if ( have_posts() ) : ?>
 				<header class="page-header">
 					<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-					<?php the_archive_description( '<p>', '</p>' ); ?>
+					<?php the_archive_description(); ?>
 				</header><!-- .page-header -->
 				<div class="product-grid">
 					<ul>
@@ -23,7 +23,7 @@ get_header(); ?>
 									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 								</div>
 								<div class="product-wrap">
-									<h2><span><?php the_title(); ?><span></h2>
+									<h2><span><?php the_title(); ?></span></h2>
 									<p><?php echo CFS()->get( 'product_price' ); ?></p>
 								</div>
 							</li>
