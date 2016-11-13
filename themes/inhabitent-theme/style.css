@@ -347,7 +347,7 @@ html {
 .overlay {
   position: absolute;
   z-index: 100;
-  top: 0;
+  bottom: -5px;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -844,22 +844,22 @@ a {
   display: block; }
 
 /* Page Styles */
-body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure) #content {
+body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure):not(.single-adventure) #content {
   display: -ms-flexbox;
   display: flex;
   width: 1120px;
   margin: 0 auto;
   height: 100%; }
-  body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure) #content #primary {
+  body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure):not(.single-adventure) #content #primary {
     width: 74%;
     padding-right: 60px; }
 
 #content {
   padding-bottom: 3rem; }
 
-body:not(.home):not(.page-template-page-about) #content {
+body:not(.home):not(.page-template-page-about):not(.single-adventure) #content {
   padding-top: 50px; }
-  body:not(.home):not(.page-template-page-about) #content #primary {
+  body:not(.home):not(.page-template-page-about):not(.single-adventure) #content #primary {
     padding-top: 50px; }
 
 .container {
@@ -867,7 +867,10 @@ body:not(.home):not(.page-template-page-about) #content {
   margin: 0 auto;
   height: 100%; }
 
-section:not(.hero):not(.about-hero) {
+section {
+  width: 100%; }
+
+section:not(.hero):not(.about-hero):not(.adventure-hero) {
   padding-top: 4.5rem; }
 
 .clearfix::after {
@@ -1043,7 +1046,20 @@ section:not(.hero):not(.about-hero) {
   .adventure-grid li .green-link a {
     font-size: 1.1rem; }
 
-/*Hello!*/
+.adventure-img {
+  width: 100%; }
+  .adventure-img img {
+    max-width: 100%;
+    height: auto; }
+
+.adventure-desc {
+  padding-top: 2.5rem;
+  margin: 0 auto;
+  width: 800px; }
+  .adventure-desc h2 {
+    font-weight: normal;
+    font-size: 1.2rem; }
+
 .single-post .entry-footer {
   font-family: "novacento", "arial", "sans-serif";
   text-transform: uppercase;

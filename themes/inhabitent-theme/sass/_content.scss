@@ -50,7 +50,7 @@
 
 /* Page Styles */
 
-body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure){
+body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure):not(.single-adventure){
 	#content {
 	  display: flex;
 		width: 1120px;
@@ -67,7 +67,7 @@ body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):n
 	padding-bottom: 3rem;
 }
 
-body:not(.home):not(.page-template-page-about) #content{
+body:not(.home):not(.page-template-page-about):not(.single-adventure) #content{
 	padding-top: 50px;
 	#primary {
 		padding-top: 50px;
@@ -80,7 +80,11 @@ body:not(.home):not(.page-template-page-about) #content{
 	height: 100%;
 }
 
-section:not(.hero):not(.about-hero) {
+section {
+	width: 100%;
+}
+
+section:not(.hero):not(.about-hero):not(.adventure-hero) {
   padding-top: 4.5rem;
 }
 
