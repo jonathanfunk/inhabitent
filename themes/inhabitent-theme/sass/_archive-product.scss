@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------
+# Archive Product Page
+--------------------------------------------------------------*/
+
 .page-header {
   ul {
     display: flex;
@@ -37,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     h2 {
-      font: 1rem $font__main;
+      font: $base__space-unit $font__main;
       text-transform: none;
       line-height: 2;
       letter-spacing: 0;
@@ -50,8 +54,7 @@
       }
     }
     p {
-      font: 1rem $font__main;
-      line-height: 2;
+      font-family: $font__main;
       margin-bottom: 0;
       float:left;
       width: 80px;

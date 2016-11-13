@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 # Journal
 --------------------------------------------------------------*/
+
 .blog, .date {
     article{
     margin-bottom: 4.5rem;
@@ -20,7 +21,7 @@
   }
   h1, h2 {
     padding: .5rem 1.5rem;
-    line-height: $font__line-height-body;
+    line-height: 1.5;
     position: absolute;
     top: 35px;
     width: 570px;
@@ -33,16 +34,13 @@
     }
   }
   .entry-meta {
-    line-height: $font__line-height-body;
+    line-height: 1.5;
     padding: .3rem .5rem;
     position: absolute;
     right: 0;
     bottom: 0;
     background-color: $color_green;
   }
- }
- .entry-content {
-   line-height: 1.8;
  }
 }
 .read-more{
