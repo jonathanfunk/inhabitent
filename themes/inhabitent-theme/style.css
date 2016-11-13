@@ -507,7 +507,8 @@ a {
   position: absolute;
   border: 0; }
   .reverse-nav a {
-    color: white; }
+    color: white;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5); }
     .reverse-nav a:hover {
       color: #d99054; }
   .reverse-nav .site-branding {

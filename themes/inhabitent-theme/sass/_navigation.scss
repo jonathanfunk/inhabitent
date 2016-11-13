@@ -57,6 +57,7 @@ a {
 	border: 0;
 	a {
 		color: white;
+		text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 		&:hover{
 			color: $color__link-hover;
 		}
