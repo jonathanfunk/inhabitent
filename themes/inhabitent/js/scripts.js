@@ -16,7 +16,7 @@
   var adventureClass = $("body").hasClass("single-adventure");
   var aboutClass = $("body").hasClass("page-template-page-about");
 
-  //This will add class if body has certain class
+  //If current page has hero image, nav bar will be inverse colour until user scrolls below image
   if(homeClass || adventureClass || aboutClass){
     $("#masthead").addClass("reverse-nav");
     $(window).scroll(function() {
