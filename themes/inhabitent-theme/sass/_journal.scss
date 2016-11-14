@@ -20,6 +20,7 @@
     height: auto;
   }
   h1, h2 {
+    color: white;
     padding: .5rem 1.5rem;
     line-height: 1.5;
     position: absolute;
@@ -30,7 +31,7 @@
   a {
     color: white;
     &:hover {
-      color: $color__link-hover;
+      color: $color_yellow;
     }
   }
   .entry-meta {

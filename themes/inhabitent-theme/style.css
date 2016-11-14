@@ -212,7 +212,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -507,6 +507,18 @@ a {
       display: block;
       height: 33px;
       width: 50px; }
+  .site-header ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #f0e4d1; }
+  .site-header :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #f0e4d1; }
+  .site-header ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #f0e4d1; }
+  .site-header :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #f0e4d1; }
 
 .reverse-nav {
   background-color: transparent;
@@ -519,6 +531,8 @@ a {
       color: #f0e4d1; }
   .reverse-nav .site-branding {
     background-image: url("../../images/inhabitent-logo-tent-white.svg"); }
+  .reverse-nav input[type=search] {
+    color: white; }
 
 .main-navigation {
   display: -ms-flexbox;
@@ -552,26 +566,28 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
-  .main-navigation .search-form fieldset {
+  .main-navigation fieldset {
     border: 0;
     padding: 0;
     margin: 0; }
-    .main-navigation .search-form fieldset .show-search {
-      border: 0;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-      cursor: pointer;
-      font-size: 1rem; }
-    .main-navigation .search-form fieldset input[type=search] {
-      font: 1rem "novacento", "arial", "sans-serif";
-      background-color: transparent;
-      text-transform: uppercase;
-      border: 0;
-      padding: 0;
-      margin: 0;
-      width: 200px;
-      display: none; }
+  .main-navigation .show-search {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem; }
+  .main-navigation input[type=search] {
+    font: 1rem "novacento", "arial", "sans-serif";
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 0;
+    padding-left: 1rem;
+    margin: 0;
+    width: 200px;
+    display: none; }
+    .main-navigation input[type=search]:focus {
+      outline: 0; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1191,6 +1207,7 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
     width: 100%;
     height: auto; }
   .blog .entry-header h1, .blog .entry-header h2, .single-post .entry-header h1, .single-post .entry-header h2, .date .entry-header h1, .date .entry-header h2 {
+    color: white;
     padding: .5rem 1.5rem;
     line-height: 1.5;
     position: absolute;
@@ -1200,7 +1217,7 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
   .blog .entry-header a, .single-post .entry-header a, .date .entry-header a {
     color: white; }
     .blog .entry-header a:hover, .single-post .entry-header a:hover, .date .entry-header a:hover {
-      color: #d99054; }
+      color: #f0e4d1; }
   .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta, .date .entry-header .entry-meta {
     line-height: 1.5;
     padding: .3rem .5rem;

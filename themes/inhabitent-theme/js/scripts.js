@@ -3,11 +3,11 @@
   //This will show/hide the search form in navigation
   $('.show-search').on('click', function(event){
     event.preventDefault();
-    $('input[type=search]').animate({width: 'toggle'}).focus();
+    $('#site-navigation input[type=search]').animate({width: 'toggle'}).focus();
   });
 
   //This will hide the search form when no longer in focus.
-  $('input[type=search').on('focusout', function(){
+  $('#site-navigation input[type=search]').on('focusout', function(){
 	   $(this).animate({width: 'toggle'});
   });
 
