@@ -819,7 +819,8 @@ a {
   display: flex; }
 
 .contact-info-widget-class i {
-  margin-right: .5rem; }
+  margin-right: .5rem;
+  width: 1rem; }
 
 /*--------------------------------------------------------------
 # Sidebar
@@ -1333,7 +1334,8 @@ object {
   .site-footer p span {
     font-weight: bold; }
   .site-footer i {
-    margin: 0 .4rem; }
+    margin: 0 .4rem;
+    width: 1rem; }
     .site-footer i:first-child {
       margin-left: 0; }
   .site-footer a {

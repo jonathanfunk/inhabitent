@@ -1,12 +1,17 @@
 (function( $ ) {
 
-  //This will show/hide search form in navigation
+  //This will show/hide the search form in navigation
   $('.show-search').on('click', function(event){
     event.preventDefault();
     $('input[type=search]').animate({width: 'toggle'}).focus();
   });
 
-  //These are variables for Bodies with certain classes
+  //This will hide the search form when no longer in focus.
+  $('input[type=search').on('focusout', function(){
+	   $(this).animate({width: 'toggle'});
+  });
+
+  //These are variables for Bodies with certain classes ie pages with hero images
   var homeClass = $("body").hasClass("home");
   var adventureClass = $("body").hasClass("single-adventure");
   var aboutClass = $("body").hasClass("page-template-page-about");
