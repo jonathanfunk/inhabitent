@@ -20,9 +20,13 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	letter-spacing: .15rem;
 	font-family: $font_accent;
-	color: black;
+	color: $color_purple;
 	margin: 0;
 	text-transform: uppercase;
+}
+
+h1 {
+	color: $color__text-main;
 }
 
 h2 {

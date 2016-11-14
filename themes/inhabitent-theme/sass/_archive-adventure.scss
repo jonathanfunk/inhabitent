@@ -47,19 +47,22 @@
     }
     h2 {
       font: 3rem $font__main;
-      color: white;
       text-transform: none;
       margin-bottom: 4.5rem;
-    }
-    .white-link {
-      a{
+      a {
         color: white;
-        border: 1px solid white;
+        &:hover {
+          color: $color_yellow;
+        }
       }
     }
-    .green-link {
-      a {
-        font-size: 1.1rem;
+  }
+  .white-link {
+    a{
+      color: white;
+      border: 1px solid white;
+      &:hover {
+        border-color: $color_green;
       }
     }
   }

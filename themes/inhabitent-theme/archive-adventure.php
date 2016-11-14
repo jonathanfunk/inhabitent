@@ -21,7 +21,7 @@ get_header(); ?>
 								<div class="adventure-img"><?php the_post_thumbnail(); ?>
 								</div>
 								<div class="headline">
-									<h2><?php the_title(); ?></h2>
+									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 									<p class="white-link"><a href="<?php the_permalink(); ?>">Read More</a></p>
 								</div>
 							</li>

@@ -66,7 +66,7 @@ get_header(); ?>
 						<div class="adventure-img"><?php the_post_thumbnail('large'); ?>
 						</div>
 						<div class="headline">
-							<h3><?php the_title(); ?></h3>
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 							<p class="white-link"><a href="<?php the_permalink(); ?>">Read More</a></p>
 						</div>
 					</li>
