@@ -796,7 +796,7 @@ a {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clearfix {
+.clearfix::after {
   clear: both;
   content: "";
   display: table; }
@@ -907,11 +907,6 @@ section {
 section:not(.hero):not(.about-hero):not(.adventure-hero) {
   padding-top: 4.5rem; }
 
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: table; }
-
 /* Custom Archives Styles*/
 .post-type-archive-adventure .page-header, .post-type-archive-product .page-header, .tax-product_type .page-header {
   text-align: center; }
@@ -941,6 +936,17 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
   border: 1px solid black;
   padding: .75rem 1.75rem; }
   .white-link a:hover {
+    background-color: #248A83;
+    border-color: #248A83;
+    color: white; }
+
+.read-more {
+  font: 1rem "novacento", "arial", "sans-serif";
+  text-transform: uppercase;
+  color: black;
+  border: 1px solid black;
+  padding: .75rem 1.75rem; }
+  .read-more:hover {
     background-color: #248A83;
     border-color: #248A83;
     color: white; }
@@ -1211,17 +1217,6 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
     right: 0;
     bottom: 0;
     background-color: #248A83; }
-
-.read-more {
-  font: 1rem "novacento", "arial", "sans-serif";
-  text-transform: uppercase;
-  color: black;
-  border: 1px solid black;
-  padding: .75rem 1.75rem; }
-  .read-more:hover {
-    background-color: #248A83;
-    border-color: #248A83;
-    color: white; }
 
 /*--------------------------------------------------------------
 # About

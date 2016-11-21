@@ -9,26 +9,26 @@
     border-bottom: $base_solid_border;
   }
   h2 {
-    a{
+    a {
       color: $color_green;
     }
   }
   .entry-summary {
-    p{
+    p {
       margin-bottom: 2rem;
     }
   }
   article {
     margin-bottom: 5rem;
   }
-  .search-pagination{
+  .search-pagination {
     border-top: $base_solid_border;
     padding-top: 2rem;
     .current {
       background-color: $color__text-main;
     }
   }
-  .page-numbers{
+  .page-numbers {
     color: #fff;
     font-family: $font_accent;
     text-transform: uppercase;

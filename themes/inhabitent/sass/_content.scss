@@ -67,7 +67,7 @@ body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):n
 	padding-bottom: 3rem;
 }
 
-body:not(.home):not(.page-template-page-about):not(.single-adventure) #content{
+body:not(.home):not(.page-template-page-about):not(.single-adventure) #content {
 	padding-top: 50px;
 	#primary {
 		padding-top: 50px;
@@ -88,15 +88,9 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
   padding-top: 4.5rem;
 }
 
-.clearfix::after{
-	clear: both;
-	content: "";
-  display: table;
-}
-
 /* Custom Archives Styles*/
 .post-type-archive-adventure, .post-type-archive-product, .tax-product_type {
-  .page-header{
+  .page-header {
     text-align: center;
     h1 {
       margin-bottom: 1.8rem;
@@ -104,8 +98,8 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
   }
 }
 
-.post-type-archive-adventure, .post-type-archive-product{
-	.page-header{
+.post-type-archive-adventure, .post-type-archive-product {
+	.page-header {
 		border-bottom: $base_dashed_border;
 		margin-bottom: 3rem;
 	}
@@ -139,6 +133,19 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
       border-color: $color_green;
       color: white;
     }
+  }
+}
+
+.read-more {
+  font: 1rem $font_accent;
+  text-transform: uppercase;
+  color: black;
+  border: 1px solid black;
+  padding: .75rem 1.75rem;
+  &:hover {
+    background-color: $color_green;
+    border-color: $color_green;
+    color: white;
   }
 }
 

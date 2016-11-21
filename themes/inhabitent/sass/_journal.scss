@@ -3,13 +3,13 @@
 --------------------------------------------------------------*/
 
 .blog, .date {
-    article{
+    article {
     margin-bottom: 4.5rem;
   }
 }
 
 .blog, .single-post, .date {
-  .entry-header{
+  .entry-header {
     font-family: $font_accent;
     text-transform: uppercase;
     line-height: 0;
@@ -43,16 +43,4 @@
     background-color: $color_green;
   }
  }
-}
-.read-more{
-  font: 1rem $font_accent;
-  text-transform: uppercase;
-  color: black;
-  border: 1px solid black;
-  padding: .75rem 1.75rem;
-  &:hover {
-    background-color: $color_green;
-    border-color: $color_green;
-    color: white;
-  }
 }

@@ -55,8 +55,8 @@
 # Clearings
 --------------------------------------------------------------*/
 
-.clearfix {
+.clearfix::after {
 	clear: both;
 	content: "";
-	display: table;
+  display: table;
 }
