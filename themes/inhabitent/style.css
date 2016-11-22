@@ -878,13 +878,19 @@ a {
   display: block; }
 
 /* Page Styles */
-body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure):not(.single-adventure) #content {
+.blog #content,
+.single-post #content,
+.page-id-32 #content,
+.error404 #content {
   display: -ms-flexbox;
   display: flex;
   width: 1120px;
   margin: 0 auto;
   height: 100%; }
-  body:not(.home):not(.page-template-page-about):not(.post-type-archive-product):not(.tax-product_type):not(.single-product):not(.post-type-archive-adventure):not(.single-adventure) #content #primary {
+  .blog #content #primary,
+  .single-post #content #primary,
+  .page-id-32 #content #primary,
+  .error404 #content #primary {
     width: 74%;
     padding-right: 60px; }
 
