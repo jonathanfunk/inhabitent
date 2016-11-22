@@ -57,7 +57,8 @@
 .error404 {
 	#content {
 	  display: flex;
-		width: 1120px;
+		max-width: 1156px;
+		padding: 0 1rem;
 		margin: 0 auto;
 		height: 100%;
 	  #primary {
@@ -79,13 +80,14 @@ body:not(.home):not(.page-template-page-about):not(.single-adventure) #content {
 }
 
 .container {
-	width: 1120px;
+	max-width: 1152px;
 	margin: 0 auto;
 	height: 100%;
+	padding: 0 1rem;
 }
 
 section {
-	width: 100%;
+	max-width: 100%;
 }
 
 section:not(.hero):not(.about-hero):not(.adventure-hero) {
