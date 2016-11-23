@@ -1110,17 +1110,19 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
 .single-product .one-product {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .single-product .product-img {
-  width: 540px; }
+  width: 100%; }
   .single-product .product-img img {
     width: 100%;
     height: auto; }
 
 .single-product .product-desc {
-  width: 540px; }
+  width: 100%; }
   .single-product .product-desc h1 {
     color: #d99054;
     margin-bottom: .7rem; }
@@ -1128,6 +1130,15 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
     font-size: 1.8rem;
     letter-spacing: .5px;
     font-weight: normal; }
+
+@media (min-width: 1000px) {
+  .single-product .one-product {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .single-product .product-img {
+    width: calc(50% - 20px); }
+  .single-product .product-desc {
+    width: calc(50% - 20px); } }
 
 /*--------------------------------------------------------------
 # Adventure Archive
