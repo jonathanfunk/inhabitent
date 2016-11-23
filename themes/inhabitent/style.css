@@ -1040,21 +1040,27 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
 .page-header ul {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .page-header li {
-  margin: 0 1.7rem;
   font-family: "novacento", "arial", "sans-serif";
   text-transform: uppercase; }
+
+@media (min-width: 600px) {
+  .page-header ul {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .page-header li {
+    margin: 0 1.7rem; } }
 
 .product-grid {
   padding-top: 1rem; }
   .product-grid ul {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .product-grid li {
@@ -1067,6 +1073,10 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
     height: 100%;
     width: auto;
     display: block; }
+  @media (min-width: 1000px) {
+    .product-grid ul {
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .product-wrap {
   border: 1px solid #e1e1e1;
