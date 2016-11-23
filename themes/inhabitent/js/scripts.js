@@ -1,6 +1,12 @@
 (function( $ ) {
 
-  //This will show/hide the search form in navigation
+  //This will show/hide the navigation list in mobile view.
+  $('.menu-toggle').on('click', function(event){
+    event.preventDefault();
+    $('#primary-menu').slideToggle("fast").css('display','flex');
+  });
+
+  //This will show/hide the search form in navigation.
   $('.show-search').on('click', function(event){
     event.preventDefault();
     $('#site-navigation input[type=search]').animate({width: 'toggle'}).focus();
@@ -11,12 +17,12 @@
 	   $(this).animate({width: 'toggle'});
   });
 
-  //These are variables for Bodies with certain classes ie pages with hero images
+  //These are variables for Bodies with certain classes ie pages with hero images.
   var homeClass = $("body").hasClass("home");
   var adventureClass = $("body").hasClass("single-adventure");
   var aboutClass = $("body").hasClass("page-template-page-about");
 
-  //If current page has hero image, nav bar will be inverse colour until user scrolls below image
+  //If current page has hero image, nav bar will be inverse colour until user scrolls below image.
   if(homeClass || adventureClass || aboutClass){
     $("#masthead").addClass("reverse-nav");
     $(window).scroll(function() {

@@ -506,6 +506,8 @@ a {
   .site-header :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #f0e4d1; }
+  .site-header button {
+    color: #248A83; }
 
 .reverse-nav {
   background-color: transparent;
@@ -520,15 +522,26 @@ a {
     background-image: url("../../images/inhabitent-logo-tent-white.svg"); }
   .reverse-nav input[type=search] {
     color: white; }
+  .reverse-nav button {
+    color: white; }
+  .reverse-nav .main-navigation ul {
+    background-color: transparent; }
 
 .main-navigation {
   display: -ms-flexbox;
   display: flex; }
   .main-navigation ul {
     display: none;
+    position: absolute;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    left: 0;
+    top: 100%;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 0;
+    background-color: rgba(255, 255, 255, 0.6); }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -548,8 +561,7 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    display: inline-block;
-    margin-right: 1.2rem; }
+    display: inline-block; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -587,7 +599,12 @@ a {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: block; }
+    background-color: transparent;
+    display: block;
+    position: relative;
+    top: 0; }
+    .main-navigation ul li {
+      margin-right: 1.2rem; }
   .menu-navigation-menu-container {
     position: relative; } }
 

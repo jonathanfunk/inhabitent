@@ -61,6 +61,9 @@ a {
 	:-ms-input-placeholder { /* Internet Explorer 10-11 */
 		color: $color_yellow;
 	}
+	button {
+		color: $color_green;
+	}
 }
 
 .reverse-nav {
@@ -80,15 +83,29 @@ a {
 	input[type=search] {
 		color: white;
 	}
+	button {
+		color: white;
+	}
+	.main-navigation {
+		ul {
+			background-color: transparent;
+		}
+	}
 }
 
 .main-navigation {
 	display: flex;
 	ul {
 		display: none;
+		position: absolute;
 		list-style: none;
 		margin: 0;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		justify-content: space-around;
 		padding-left: 0;
+		background-color: rgba(255,255,255,0.6);
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -123,8 +140,6 @@ a {
 	}
 	li {
 		display: inline-block;
-		margin-right: 1.2rem;
-
 		&:hover > a,
 		&.focus > a {
 		}
@@ -177,11 +192,18 @@ a {
 		display: none;
 	}
 	.main-navigation ul {
+		background-color: transparent;
 		display: block;
+		position: relative;
+		top: 0;
+		li {
+			margin-right: 1.2rem;
+		}
 	}
 	.menu-navigation-menu-container{
 		position: relative;
 	}
+
 }
 .comment-navigation,
 .posts-navigation,
