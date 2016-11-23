@@ -36,7 +36,8 @@
   padding-bottom: 0;
   ul {
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   li {
     border: $base_solid_border;
@@ -44,6 +45,7 @@
     text-align: center;
     padding: 1rem .5rem;
     width: 260px;
+    margin-bottom: 1rem;
     &:hover {
       border-color: $color_orange;
     }
@@ -52,6 +54,14 @@
     width: 70px;
     margin-bottom: 1rem;
   }
+  @include desktop {
+    ul {
+      justify-content: space-between;
+    }
+    li {
+      margin-bottom: 0;
+    }
+  }
 }
 
 /* Inhabitent Journal */
@@ -59,11 +69,13 @@
 .journal-feed {
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   li {
     width: 355px;
     overflow: hidden;
+    margin-bottom: 1rem;
   }
   img {
     height: 245px;
@@ -81,6 +93,14 @@
     p {
       font-size: .5rem;
       margin-bottom: .3rem;
+    }
+  }
+  @include desktop {
+    ul {
+      justify-content: space-between;
+    }
+    li {
+      margin-bottom: 0;
     }
   }
 }
