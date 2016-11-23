@@ -1320,9 +1320,10 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
     padding: .5rem 1.5rem;
     line-height: 1.5;
     position: absolute;
-    top: 35px;
-    max-width: 570px;
-    background-color: #248A83; }
+    top: 0;
+    width: 100%;
+    background-color: #248A83;
+    font-size: 1rem; }
   .blog .entry-header a, .single-post .entry-header a, .date .entry-header a {
     color: white; }
     .blog .entry-header a:hover, .single-post .entry-header a:hover, .date .entry-header a:hover {
@@ -1330,10 +1331,18 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
   .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta, .date .entry-header .entry-meta {
     line-height: 1.5;
     padding: .3rem .5rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: #248A83; }
+    background-color: #248A83;
+    font-size: .8rem; }
+  @media (min-width: 600px) {
+    .blog .entry-header h1, .blog .entry-header h2, .single-post .entry-header h1, .single-post .entry-header h2, .date .entry-header h1, .date .entry-header h2 {
+      top: 35px;
+      max-width: 570px;
+      font-size: 2rem; }
+    .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta, .date .entry-header .entry-meta {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: 1rem; } }
 
 /*--------------------------------------------------------------
 # About
