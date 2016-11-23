@@ -704,32 +704,28 @@ a {
     margin-bottom: 0; } }
 
 /* Latest Adventure */
+.adventure .container {
+  max-width: 580px; }
+
 .adventure ul {
   padding: 0;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 580px;
+  margin: 0 auto; }
 
 .adventure li {
   width: 270px;
   height: 270px;
-  margin-left: 20px;
   color: white;
   position: relative;
   overflow: hidden;
-  float: left; }
-  .adventure li:first-child {
-    width: 540px;
-    height: 540px;
-    margin: 0; }
-    .adventure li:first-child img {
-      min-height: 640px; }
-    .adventure li:first-child h3 {
-      font-size: 3rem; }
-  .adventure li:nth-child(2) {
-    width: 560px;
-    height: 250px;
-    margin: 0 0 20px 20px; }
-    .adventure li:nth-child(2) h3 {
-      font-size: 2.5rem; }
+  margin-bottom: 20px; }
 
 .adventure .adventure-img {
   position: absolute;
@@ -739,7 +735,7 @@ a {
 
 .adventure img {
   width: auto;
-  max-height: 400px;
+  min-height: 400px;
   position: absolute;
   top: 75%;
   left: 50%;
@@ -765,8 +761,44 @@ a {
   color: white;
   border: 1px solid white; }
 
-.adventure .green-link a {
-  font-size: 1.1rem; }
+.adventure .green-link {
+  text-align: center; }
+  .adventure .green-link a {
+    font-size: 1.1rem; }
+
+@media (min-width: 600px) {
+  .adventure ul {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .adventure li:first-child {
+    width: 560px;
+    height: 560px; }
+    .adventure li:first-child img {
+      min-height: 640px; }
+    .adventure li:first-child h3 {
+      font-size: 3rem; }
+  .adventure li:nth-child(2) {
+    width: 560px;
+    height: 250px; }
+    .adventure li:nth-child(2) h3 {
+      font-size: 2.5rem; } }
+
+@media (min-width: 1000px) {
+  .adventure ul {
+    display: block;
+    max-width: 100%; }
+  .adventure li {
+    margin-left: 20px;
+    color: white;
+    float: left; }
+    .adventure li:first-child {
+      width: 540px;
+      height: 540px;
+      margin: 0; }
+    .adventure li:nth-child(2) {
+      margin: 0 0 20px 20px; }
+  .adventure .green-link {
+    text-align: left; } }
 
 /*--------------------------------------------------------------
 # Accessibility
