@@ -56,15 +56,17 @@
 .page-id-32,
 .error404 {
 	#content {
-	  display: flex;
 		max-width: 1156px;
 		padding: 0 1rem;
-		margin: 0 auto;
-		height: 100%;
-	  #primary {
-	    width: 74%;
-	    padding-right: 60px;
-	  }
+		@include desktop {
+			display: flex;
+			margin: 0 auto;
+			height: 100%;
+			#primary {
+				width: 74%;
+				padding-right: 60px;
+			}
+		}
 	}
 }
 

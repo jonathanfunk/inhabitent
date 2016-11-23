@@ -428,7 +428,8 @@ textarea {
   background-color: #e1e1e1;
   text-transform: none;
   border: 1px solid #ccc;
-  margin-top: 1.4rem; }
+  margin-top: 1.4rem;
+  max-width: 100%; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -834,10 +835,14 @@ a {
 # Sidebar
 --------------------------------------------------------------*/
 #secondary {
-  width: 27%;
-  padding-top: 65px;
-  padding-left: 50px;
-  border-left: 1px solid #e1e1e1; }
+  display: none; }
+  @media (min-width: 1000px) {
+    #secondary {
+      display: block;
+      width: 27%;
+      padding-top: 65px;
+      padding-left: 50px;
+      border-left: 1px solid #e1e1e1; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -882,18 +887,23 @@ a {
 .single-post #content,
 .page-id-32 #content,
 .error404 #content {
-  display: -ms-flexbox;
-  display: flex;
   max-width: 1156px;
-  padding: 0 1rem;
-  margin: 0 auto;
-  height: 100%; }
-  .blog #content #primary,
-  .single-post #content #primary,
-  .page-id-32 #content #primary,
-  .error404 #content #primary {
-    width: 74%;
-    padding-right: 60px; }
+  padding: 0 1rem; }
+  @media (min-width: 1000px) {
+    .blog #content,
+    .single-post #content,
+    .page-id-32 #content,
+    .error404 #content {
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 auto;
+      height: 100%; }
+      .blog #content #primary,
+      .single-post #content #primary,
+      .page-id-32 #content #primary,
+      .error404 #content #primary {
+        width: 74%;
+        padding-right: 60px; } }
 
 #content {
   padding-bottom: 3rem; }
@@ -1317,27 +1327,62 @@ object {
 --------------------------------------------------------------*/
 .site-footer {
   width: 100%;
-  height: 355px;
+  min-height: 355px;
   background: url("../../images/dark-wood.png") repeat;
-  padding-top: 4rem;
   color: white;
   line-height: 1.4; }
   .site-footer .container {
+    text-align: center;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .site-footer .container .contact, .site-footer .container .business {
-      width: 25%; }
+        flex-wrap: wrap;
+    padding-top: 2rem; }
+    .site-footer .container .contact, .site-footer .container .business, .site-footer .container .footer-logo {
+      width: 100%; }
+    .site-footer .container .contact {
+      -ms-flex-order: 3;
+          order: 3; }
+    .site-footer .container .business {
+      -ms-flex-order: 2;
+          order: 2; }
     .site-footer .container .footer-logo {
-      height: 50px;
-      width: 50%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+      -ms-flex-order: 0;
+          order: 0;
+      margin-bottom: 1rem; }
+    .site-footer .container .site-info {
+      -ms-flex-order: 4;
+          order: 4; }
+    .site-footer .container p {
+      margin-bottom: 1rem; }
+    @media (min-width: 600px) {
+      .site-footer .container p {
+        margin-bottom: 1.5rem; }
+      .site-footer .container h3 {
+        margin-bottom: 1.5rem; }
+      .site-footer .container .contact, .site-footer .container .business {
+        width: 50%; } }
+    @media (min-width: 1000px) {
+      .site-footer .container {
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        text-align: left;
+        padding-top: 4rem; }
+        .site-footer .container .contact, .site-footer .container .business {
+          width: 25%;
+          -ms-flex-order: 0;
+              order: 0; }
+        .site-footer .container .footer-logo {
+          -ms-flex-order: 2;
+              order: 2;
+          height: 50px;
+          width: 50%;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
     .site-footer .container .site-info {
       text-align: center;
       width: 100%;
@@ -1346,7 +1391,7 @@ object {
       margin-bottom: 0; }
   .site-footer h3 {
     color: #d99054;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1rem; }
   .site-footer p span {
     font-weight: bold; }
   .site-footer i {
@@ -1358,6 +1403,9 @@ object {
     color: white; }
     .site-footer a:hover {
       text-decoration: underline; }
+  .site-footer img {
+    max-width: 100%;
+    height: auto; }
 
 /*--------------------------------------------------------------
 # Search Page Results

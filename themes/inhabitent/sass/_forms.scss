@@ -30,6 +30,7 @@ textarea {
 	text-transform: none;
 	border: 1px solid #ccc;
 	margin-top: 1.4rem;
+	max-width: 100%;
 	&:focus {
 		color: #111;
 	}
