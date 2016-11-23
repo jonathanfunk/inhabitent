@@ -159,8 +159,9 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
 
 .social-wrap {
 	display: flex;
+	flex-wrap: wrap;
 	p {
-		margin-right: .3rem;
+		margin: 0 .4rem 1.8rem 0;
 		font-size: .8rem;
 	}
 }
