@@ -52,7 +52,7 @@ get_header(); ?>
 					</ul>
 				</section><!-- .journal-feed -->
 				<section class="adventure container">
-					<h2>Latest Adventures</h2><!--May need to change this to dynamic?-->
+					<h2>Latest Adventures</h2>
 					<ul class="clearfix">
 						<?php
 						$args = array(
