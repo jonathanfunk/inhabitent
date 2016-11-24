@@ -958,6 +958,7 @@ a {
 /* Page Styles */
 .blog #content,
 .single-post #content,
+.category #content,
 .page-id-32 #content,
 .error404 #content {
   max-width: 1156px;
@@ -965,6 +966,7 @@ a {
   @media (min-width: 1000px) {
     .blog #content,
     .single-post #content,
+    .category #content,
     .page-id-32 #content,
     .error404 #content {
       display: -ms-flexbox;
@@ -973,6 +975,7 @@ a {
       height: 100%; }
       .blog #content #primary,
       .single-post #content #primary,
+      .category #content #primary,
       .page-id-32 #content #primary,
       .error404 #content #primary {
         width: 74%;
@@ -1323,16 +1326,16 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
 .blog article, .date article {
   margin-bottom: 4.5rem; }
 
-.blog .entry-header, .single-post .entry-header, .date .entry-header {
+.blog .entry-header, .single-post .entry-header, .category .entry-header, .date .entry-header {
   font-family: "novacento", "arial", "sans-serif";
   text-transform: uppercase;
   line-height: 0;
   position: relative;
   color: white; }
-  .blog .entry-header img, .single-post .entry-header img, .date .entry-header img {
+  .blog .entry-header img, .single-post .entry-header img, .category .entry-header img, .date .entry-header img {
     width: 100%;
     height: auto; }
-  .blog .entry-header h1, .blog .entry-header h2, .single-post .entry-header h1, .single-post .entry-header h2, .date .entry-header h1, .date .entry-header h2 {
+  .blog .entry-header h1, .blog .entry-header h2, .single-post .entry-header h1, .single-post .entry-header h2, .category .entry-header h1, .category .entry-header h2, .date .entry-header h1, .date .entry-header h2 {
     color: white;
     padding: .5rem 1.5rem;
     line-height: 1.5;
@@ -1341,21 +1344,21 @@ section:not(.hero):not(.about-hero):not(.adventure-hero) {
     width: 100%;
     background-color: #248A83;
     font-size: 1rem; }
-  .blog .entry-header a, .single-post .entry-header a, .date .entry-header a {
+  .blog .entry-header a, .single-post .entry-header a, .category .entry-header a, .date .entry-header a {
     color: white; }
-    .blog .entry-header a:hover, .single-post .entry-header a:hover, .date .entry-header a:hover {
+    .blog .entry-header a:hover, .single-post .entry-header a:hover, .category .entry-header a:hover, .date .entry-header a:hover {
       color: #f0e4d1; }
-  .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta, .date .entry-header .entry-meta {
+  .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta, .category .entry-header .entry-meta, .date .entry-header .entry-meta {
     line-height: 1.5;
     padding: .3rem .5rem;
     background-color: #248A83;
     font-size: .8rem; }
   @media (min-width: 600px) {
-    .blog .entry-header h1, .blog .entry-header h2, .single-post .entry-header h1, .single-post .entry-header h2, .date .entry-header h1, .date .entry-header h2 {
+    .blog .entry-header h1, .blog .entry-header h2, .single-post .entry-header h1, .single-post .entry-header h2, .category .entry-header h1, .category .entry-header h2, .date .entry-header h1, .date .entry-header h2 {
       top: 35px;
       max-width: 570px;
       font-size: 2rem; }
-    .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta, .date .entry-header .entry-meta {
+    .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta, .category .entry-header .entry-meta, .date .entry-header .entry-meta {
       position: absolute;
       right: 0;
       bottom: 0;
