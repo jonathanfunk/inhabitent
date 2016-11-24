@@ -717,9 +717,7 @@ a {
 @media (min-width: 1000px) {
   .journal-feed ul {
     -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .journal-feed li {
-    margin-bottom: 0; } }
+        justify-content: space-between; } }
 
 /* Latest Adventure */
 .adventure .container {
@@ -730,8 +728,8 @@ a {
   margin-bottom: 2.5rem;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 580px;
@@ -788,32 +786,36 @@ a {
   .adventure ul {
     -ms-flex-pack: justify;
         justify-content: space-between; }
-  .adventure li:first-child {
-    width: 560px;
-    height: 560px; }
-    .adventure li:first-child img {
-      min-height: 640px; }
-    .adventure li:first-child h3 {
-      font-size: 3rem; }
-  .adventure li:nth-child(2) {
-    width: 560px;
-    height: 250px; }
-    .adventure li:nth-child(2) h3 {
-      font-size: 2.5rem; } }
+  .adventure li {
+    width: calc(50% - 10px); }
+    .adventure li:first-child {
+      width: 100%;
+      height: 560px; }
+      .adventure li:first-child img {
+        min-height: 640px; }
+      .adventure li:first-child h3 {
+        font-size: 3rem; }
+    .adventure li:nth-child(2) {
+      width: 100%;
+      height: 250px; }
+      .adventure li:nth-child(2) h3 {
+        font-size: 2.5rem; } }
 
 @media (min-width: 1000px) {
   .adventure ul {
     display: block;
     max-width: 100%; }
   .adventure li {
+    width: calc(25% - 20px);
     margin-left: 20px;
     color: white;
     float: left; }
     .adventure li:first-child {
-      width: 540px;
+      width: calc(50% - 20px);
       height: 540px;
       margin: 0; }
     .adventure li:nth-child(2) {
+      width: calc(50% - 20px);
       margin: 0 0 20px 20px; }
   .adventure .green-link {
     text-align: left; } }
