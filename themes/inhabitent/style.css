@@ -960,6 +960,7 @@ a {
 .single-post #content,
 .category #content,
 .page-id-32 #content,
+.date #content,
 .error404 #content {
   max-width: 1156px;
   padding: 0 1rem; }
@@ -968,6 +969,7 @@ a {
     .single-post #content,
     .category #content,
     .page-id-32 #content,
+    .date #content,
     .error404 #content {
       display: -ms-flexbox;
       display: flex;
@@ -977,6 +979,7 @@ a {
       .single-post #content #primary,
       .category #content #primary,
       .page-id-32 #content #primary,
+      .date #content #primary,
       .error404 #content #primary {
         width: 74%;
         padding-right: 60px; } }
