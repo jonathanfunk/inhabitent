@@ -88,7 +88,7 @@
     border-top-width: 5px;
     padding: 1rem;
     h3 {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       line-height: 1.1;
     }
     p {
@@ -201,7 +201,7 @@
       max-width: 100%;
     }
     li {
-      width: calc(25% - 20px);
+      width: calc(25% - 10px);
       margin-left: 20px;
       color: white;
       float: left;
@@ -211,7 +211,7 @@
         margin: 0;
       }
       &:nth-child(2){
-        width: calc(50% - 20px);
+        width: 50%;
         margin: 0 0 20px 20px;
       }
     }
